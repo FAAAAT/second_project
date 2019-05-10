@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>whca</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../util/layui/css/layui.css">
+    <script src="../util/layui/layui.js"></script>
+    <link rel="stylesheet" href="../css/D-department.css">
+    <script src="../js/D-department.js"></script>
+</head>
+<body>
+    <div class="D-box layui-container">
+        <div class="layui-row">
+            <div class="D-box-left layui-col-md2 layui-sm12">
+                <h2 class="">System</h2><br>
+                <div class="clearfix D-Nickname">
+                    <img class="D-imgFloat" src="../images/head.png" alt="">
+                    <h4 class="">whca</h4>
+                </div>
+                <div class="D-text-center">
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <!--我的两个界面-->
+                    <div><img  src="" alt=""><a href="" target="show"><h4>部门管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>职工管理</h4></a></div>
+
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
+                </div>
+            </div>
+            <div class="D-box-right layui-col-md10 layui-col-sm12">
+                <div class="clearfix">
+                    <div class="layui-row">
+                        <!--logo-->
+                        <div class="layui-col-md2"><h3 class="layui-h3">logo</h3></div>
+                        <div class="layui-col-md2 layui-col-md-offset8">
+                            <img class="" src="../images/ld.png" alt="">
+                            <!--退出登录按钮-->
+                            <button class="layui-btn layui-btn-radius layui-btn-primary">退出登录</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="D-right-conter">
+                    <div class="D-ifream">
+                        <div class="layui-row D-search">
+                            <div class="layui-col-md3 layui-col-md-offset1">
+                                <!--查询部门人-->
+                                <input type="text" placeholder="输入需要查询的内容"><button>点击</button>
+                            </div>
+                            <div class="layui-col-md2 layui-col-md-offset4">
+                                <!--新增部门人资料按钮-->
+                                <i class="layui-icon layui-icon-add-1"></i><button>新增</button>
+                            </div>
+                        </div>
+                        <!--新增部门人资料界面-->
+                        <div class="D-elastic">
+                            <form class="layui-form D-form" action="">
+                                <!--输入框-->
+                                <div class="">
+                                    <laber>姓名：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>性别：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>年龄：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>部门：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>工龄：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>入职时间：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>家庭住址：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>联系电话：<input type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>电子邮箱：<input type="text" placeholder="输入姓名"></laber><br>
+
+                                </div>
+                                <!--重置 确定 取消 按钮-->
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">确定</button>
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">取消</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!--部门人详情表格-->
+                        <table class="D-table layui-table">
+                            <colgroup>
+                                <!--<col width="150">-->
+                                <!--<col width="200">-->
+                                <col>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>部门</th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>年龄</th>
+                                <th>职位</th>
+                                <th>工龄</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>宣传</td>
+                                <td>张撒好</td>
+                                <td>女</td>
+                                <td>24</td>
+                                <td>员工</td>
+                                <td>1</td>
+                                <td>修改</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div id="test1" class="D-test1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row" style="background: black;text-align: center">
+            sdajhsdjhdls
+        </div>
+    </div>
+</body>
+<script>
+</script>
+</html>
