@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../util/layui/css/layui.css">
+    <link rel="stylesheet" href="../font/font_1184970_a7hlu57e737/iconfont.css">
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.eot');
+            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+                url('iconfont.woff') format('woff'),
+                url('iconfont.ttf') format('truetype'),
+                url('iconfont.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .layui-col-md3 {
+            height: 800px;
+            background: skyblue;
+        }
+
+        .layui-col-md9 {
+            height: 800px;
+            background: #eee;
+        }
+
+        .F-logo {
+            width: 90%;
+            margin: 20px auto 0;
+        }
+
+        .F-ld {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .F-ld span {
+            vertical-align: bottom;
+        }
+
+        .F-content {
+            width: 90%;
+            height: 500px;
+            background: white;
+            box-shadow: 1px 1px 5px #999;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .F-head {}
+
+        .F-name {
+            display: inline-block;
+
+        }
+
+        .layui-input {
+            width: 200px;
+            /* height: 30px; */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <div class="layui-row">
+            <div class="layui-col-md3">1</div>
+            <div class="layui-col-md9">
+                <div class="F-logo">
+                    <img src="../images/logo.png" alt="">
+                    <div class="F-ld">
+                        <img src="../images/ld.png" alt="">
+                        <span>退出登录></span>
+                    </div>
+                </div>
+                <div class="F-content">
+                    <div class="F-head">
+                        <div class="F-name">
+                            <span>班级名称:</span>
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="F-name">
+                            <span>班主任:</span>
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                autocomplete="off" class="layui-input">
+                        </div>
+                        <button class="layui-btn">查询</button>
+                        <span class="iconfont">&#xe669;</span>
+                        <span>添加用户</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
