@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../util/layui/css/layui.css">
     <script src="../util/layui/layui.js"></script>
+    <script src="../util/jquery-3.4.0.js"></script>
     <link rel="stylesheet" href="../css/D-department.css">
     <script src="../js/D-department.js"></script>
 </head>
@@ -19,17 +20,48 @@
                     <h4 class="">whca</h4>
                 </div>
                 <div class="D-text-center">
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <!--我的两个界面-->
-                    <div><img  src="" alt=""><a href="" target="show"><h4>部门管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>职工管理</h4></a></div>
+                    <br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
+                    <div class="layui-row">
+                        <i class="layui-icon layui-icon-home layui-col-md1 layui-col-md-offset2"></i>
+                        <a class="layui-col-md6" href="" target="show"><h4>学生管理</h4></a>
+                    </div><br>
 
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
-                    <div><img  src="" alt=""><a href="" target="show"><h4>学生管理</h4></a></div>
                 </div>
             </div>
             <div class="D-box-right layui-col-md10 layui-col-sm12">
@@ -45,43 +77,45 @@
                     </div>
                 </div>
                 <div class="D-right-conter">
-                    <div class="D-ifream">
+                    <div class="D-iframe">
                         <div class="layui-row D-search">
-                            <div class="layui-col-md3 layui-col-md-offset1">
+                            <div class="layui-col-md4 layui-col-md-offset1">
                                 <!--查询部门人-->
-                                <input type="text" placeholder="输入需要查询的内容"><button>点击</button>
+                                <input class="" type="text" placeholder="输入需要查询的内容"> <button class=" D-btn layui-btn layui-btn layui-btn-xs">查询</button>
                             </div>
                             <div class="layui-col-md2 layui-col-md-offset4">
                                 <!--新增部门人资料按钮-->
-                                <i class="layui-icon layui-icon-add-1"></i><button>新增</button>
+                                <i class="D-iframe-btn layui-icon layui-icon-add-1"></i> <button class="D-btn layui-btn layui-btn-xs D-iframe-btn">新增</button>
                             </div>
                         </div>
                         <!--新增部门人资料界面-->
                         <div class="D-elastic">
                             <form class="layui-form D-form" action="">
+                                <div>
+                                    <button class="layui-btn layui-btn-xs D-close" lay-submit lay-filter="formDemo">X</button>
+                                </div>
                                 <!--输入框-->
-                                <div class="">
-                                    <laber>姓名：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>性别：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>年龄：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>部门：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>工龄：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>入职时间：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>家庭住址：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>联系电话：<input type="text" placeholder="输入姓名"></laber><br>
-                                    <laber>电子邮箱：<input type="text" placeholder="输入姓名"></laber><br>
+                                <div id="D-elastic-input">
+                                    <laber>姓名：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>性别：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入性别"></laber><br>
+                                    <laber>年龄：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入年龄"></laber><br>
+                                    <laber>部门：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入部门"></laber><br>
+                                    <laber>入职时间：<input class="D-inp" type="text" placeholder="入职时间"></laber><br>
+                                    <laber>家庭住址：<input class="D-inp" type="text" placeholder="家庭住址"></laber><br>
+                                    <laber>联系电话：<input class="D-inp" type="text" placeholder="联系电话"></laber><br>
+                                    <laber>电子邮箱：<input class="D-inp" type="text" placeholder="电子邮箱"></laber><br>
 
                                 </div>
                                 <!--重置 确定 取消 按钮-->
-                                <div class="layui-form-item">
+                                <div class="layui-form-item D-form-btn">
                                     <div class="layui-input-block">
-                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-                                        <button class="layui-btn" lay-submit lay-filter="formDemo">确定</button>
-                                        <button class="layui-btn" lay-submit lay-filter="formDemo">取消</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary layui-btn-xs">重置</button>
+
+                                        <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formDemo">取消</button>
+                                        <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formDemo">确定</button>
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                         <!--部门人详情表格-->
                         <table class="D-table layui-table">
@@ -91,7 +125,7 @@
                                 <col>
                             </colgroup>
                             <thead>
-                            <tr>
+                            <tr id="D-tr">
                                 <th>序号</th>
                                 <th>部门</th>
                                 <th>姓名</th>
@@ -99,6 +133,8 @@
                                 <th>年龄</th>
                                 <th>职位</th>
                                 <th>工龄</th>
+                                <th>联系电话</th>
+                                <th>创建时间</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -110,79 +146,12 @@
                                 <td>女</td>
                                 <td>24</td>
                                 <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
+                                <td>2</td>
+                                <td><a class="D-tel" href="">17711066729</a></td>
+                                <td>2018-10-9</td>
+                                <td class="D-modify"><button>修改</button>&#12288 &#12288<button>X</button></td>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>宣传</td>
-                                <td>张撒好</td>
-                                <td>女</td>
-                                <td>24</td>
-                                <td>员工</td>
-                                <td>1</td>
-                                <td>修改</td>
-                            </tr>
+
                             </tbody>
                         </table>
                         <div id="test1" class="D-test1"></div>
