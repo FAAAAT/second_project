@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="public/util/layui/css/layui.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #E-silder {
+            background-color: #35514c;
+        }
+
+        #E-silder ul>li {
+            color: white;
+            font-size: 18px;
+            margin: 0 auto;
+            padding: 5%;
+            text-align: center;
+        }
+
+        #E-silder ul>li:hover {
+            background-color: #22f5e3;
+            cursor: pointer
+        }
+
+        .E-user {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            text-align: center;
+            margin: 25% 0;
+            padding: 20px;
+        }
+
+        .E-content {
+            padding: 5%;
+        }
+
+        .E-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="E-silder" class='layui-col-md2'>
+            <header>
+                <h2 style="color:white">system</h2>
+            </header>
+            <div class="E-user">
+                <img src="./public/images/head.png" alt="">
+                <span style="color:white">user</span>
+            </div>
+            <div class="E-funclist">
+                <ul>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                    <li>功能列表</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右侧内容栏 -->
+        <div id="E-content" class='layui-col-md10'>
+            <div class="E-container">
+                托管中心
+                <!-- 表格 -->
+                <table class="layui-table" lay-skin="line">
+                    <colgroup>
+                        <!-- <col width="150">
+                    <col width="200">
+                    <col> -->
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>住址</th>
+                            <th>家长</th>
+                            <th>电话</th>
+                            <th>托管负责人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>贤心</td>
+                            <td>男</td>
+                            <td>天府三街</td>
+                            <td>wanglll</td>
+                            <td>123456789</td>
+                            <td>老马</td>
+
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>男</td>
+                            <td>天府五街</td>
+                            <td>wanglll</td>
+                            <td>123456789</td>
+                            <td>老马</td>
+
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>男</td>
+                            <td>天府7街</td>
+                            <td>wanglll</td>
+                            <td>123456789</td>
+                            <td>老马</td>
+                        </tr>
+                        <tr>
+                            <td>许闲心</td>
+                            <td>男</td>
+                            <td>成都人民公园</td>
+                            <td>wanglll</td>
+                            <td>123456789</td>
+                            <td>老马</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
