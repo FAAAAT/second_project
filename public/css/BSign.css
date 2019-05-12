@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#B-mask{
+    background: url("../images/bg.jpg") center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#B-box{
+    background: rgba(255,255,255,0.6);
+    box-shadow: #aeaeae 4px 4px 8px 2px;
+    border-radius: 10px;
+    padding: 60px 60px 30px 60px;
+    margin-top: 80px;
+    width: 400px;
+}
+#B-imgs{
+    width: 100%;
+    text-align: center;
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+option:hover{
+    background: #00FF00;
+}
+
+
+.form-control:focus {
+    border-color: #80b3ad;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #77b4ad;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #77b4ad;
+}
+
+.btn{
+    width: 100%;
+    background: #35514c;
+    color: white;
+}
+.btn-default:hover {
+    color: white;
+    background-color: #3D5F59;
+    border-color: #3D5F59;
+}

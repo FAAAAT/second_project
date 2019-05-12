@@ -1,0 +1,1 @@
+let Bgo=$('.form-control');
