@@ -16,19 +16,21 @@
     background: rgba(255,255,255,0.6);
     box-shadow: #aeaeae 4px 4px 8px 2px;
     border-radius: 10px;
-    padding: 60px 60px 30px 60px;
+    padding: 60px 30px 60px 75px;
     margin-top: 80px;
     width: 400px;
 }
 /*logo*/
 #B-imgs{
     width: 100%;
+    margin-left: -20px;
     text-align: center;
 }
 /*标题*/
 h2{
     width: 100%;
     text-align: center;
+    margin-left: -30px;
 }
 /*设置输入框高度*/
 #B-user{
@@ -59,7 +61,7 @@ h2{
 }
 /*按钮的颜色*/
 .btn{
-    width: 100%;
+    width: 253px;
     background: #3D5F59;
     color: white;
 }
@@ -69,3 +71,4 @@ h2{
     background-color: #35514c;
     border-color: #35514c;
 }
+#B-go{}

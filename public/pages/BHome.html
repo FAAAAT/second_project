@@ -13,38 +13,42 @@
     <link rel="stylesheet" href="../css/Bhome.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="B-box" class="row ">
+    <div >
+        <div id="B-box" >
+
             <div id="B-left">
                 <!--名称-->
                 <div id="B-name">System</div>
-                <!--用户头像及用户名-->
-                <div id="B-user" >
-                    <div id="B-user-name" class="clearfix">
-                        <div id="B-head">
-                            <img src="../images/head.png" alt="">
+                <div id="content">
+                    <!--用户头像及用户名-->
+                    <div id="B-user" >
+                        <div id="B-user-name" class="clearfix">
+                            <div id="B-head">
+                                <img src="../images/head.png" alt="">
+                            </div>
+                            <span>admin</span>
                         </div>
-                        <span>admin</span>
+                    </div>
+                    <!--左侧菜单栏-->
+                    <div id="B-tab">
+                        <ul>
+                            <li><span class="iconfont icon-kongzhitai"></span><a href="" target="B-boss">控制台</a></li>
+                            <li><span class="iconfont icon-weibiaoti-"></span><a href="" target="B-boss">教师管理</a></li>
+                            <li><span class="iconfont icon-banji"></span><a href="" target="B-boss">班级管理</a></li>
+                            <li><span class="iconfont icon-xuesheng"></span><a href="" target="B-boss">学生管理</a></li>
+                            <li><span class="iconfont icon-kaoqin"></span><a href="" target="B-boss">考勤记录</a></li>
+                            <li><span class="iconfont icon-zhaopian"></span><a href="" target="B-boss">照片墙</a></li>
+                            <li><span class="iconfont icon-quanxian"> </span><a href="" target="B-boss">权限管理</a></li>
+                            <li><span class="iconfont icon-lingdang"></span><a href="" target="B-boss">公告</a></li>
+
+                        </ul>
+                    </div>
+                    <!--logo-->
+                    <div id="B-end-logo">
+                        <img src="../images/logo.png" alt="">
                     </div>
                 </div>
-                <!--左侧菜单栏-->
-                <div id="B-tab">
-                    <ul>
-                        <li><span class="iconfont icon-kongzhitai"></span><a href="" target="B-boss">控制台</a></li>
-                        <li><span class="iconfont icon-weibiaoti-"></span><a href="" target="B-boss">教师管理</a></li>
-                        <li><span class="iconfont icon-banji"></span><a href="" target="B-boss">班级管理</a></li>
-                        <li><span class="iconfont icon-xuesheng"></span><a href="" target="B-boss">学生管理</a></li>
-                        <li><span class="iconfont icon-kaoqin"></span><a href="" target="B-boss">考勤记录</a></li>
-                        <li><span class="iconfont icon-zhaopian"></span><a href="" target="B-boss">照片墙</a></li>
-                        <li><span class="iconfont icon-quanxian"> </span><a href="" target="B-boss">权限管理</a></li>
-                        <li><span class="iconfont icon-lingdang"></span><a href="" target="B-boss">公告</a></li>
 
-                    </ul>
-                </div>
-                <!--logo-->
-                <div id="B-end-logo">
-                    <img src="../images/logo.png" alt="">
-                </div>
             </div>
             <!--右侧窗口-->
             <div id="B-right" >
@@ -61,7 +65,7 @@
                 </div>
                 <!--内容显示窗口-->
                 <div id="B-boss">
-                    <iframe name="B-boss" frameborder="0" scrolling="no"></iframe>
+                    <iframe name="B-boss" scrolling="no"></iframe>
                 </div>
 
             </div>

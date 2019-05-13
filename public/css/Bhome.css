@@ -4,16 +4,18 @@
 }
 #B-left,#B-right{
     float: left;
+
 }
 #B-left{
     background: #35514c;
     width: 180px;
+
+}
+#content{
     padding-left: 1em;
 }
 /*系统名称*/
 #B-name{
-    margin-left: -15px;
-    width: 180px;
     font-size: 20px;
     color: white;
     padding: 10px 0 10px 20px;
@@ -95,6 +97,7 @@
 }
 #B-boss{
     background: white;
+    height: 100%;
 }
 iframe{
     width: 100%;
