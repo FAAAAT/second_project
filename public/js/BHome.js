@@ -11,7 +11,6 @@ window.onload=function () {
     }else {
         oBleft.css('height',oLook);
     }
-    console.log(oBleft.outerHeight(),oBBoss.offset().top);
     oBBoss.css('height',oBleft.outerHeight()-oBBoss.offset().top-10);
     Bwidth();
 };
