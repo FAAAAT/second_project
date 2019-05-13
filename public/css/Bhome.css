@@ -53,6 +53,9 @@
     padding-left: 1em;
     font-size: 14px;
 }
+#B-tab>ul>li>img{
+    opacity: 0.6;
+}
 #B-tab>ul>li>a{
     padding-left: 10px;
     color: white;
@@ -69,24 +72,30 @@
     padding: 10px 10px 10px 10px;
     width: 1160px;
     height: 660px;
+    background:#07957c ;
 }
 #B-right-box{
     width: 100%;
+
 }
 #B-right-logo>div{
     float: left;
 }
 #B-right-logo{
     padding: 10px 0 20px 0;
+    border-bottom: 1px solid #35514c;
 }
 #B-right-exit{
     height: 52px;
     line-height: 52px;
     margin-left: 900px;
 }
+#B-right-exit>img{
+    vertical-align: top;
+}
 #B-right-exit>a{
     padding-left: 20px;
-    color: #07957c;
+    color: black;
     text-decoration: none;
 }
 iframe{
