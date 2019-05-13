@@ -17,12 +17,12 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
-    background:lightseagreen;
+    background:#35514c;
     color: white;
 }
 .btn1{
     margin-left: 3%;
-    margin-right: 10%;
+    margin-right: 9%;
 }
 input{
     width: 120px;
@@ -30,7 +30,7 @@ input{
 }
 .layui-table th{
     text-align:center;
-    background:lightseagreen;
+    background:#35514c;
     color: white;
 }
 .layui-table td{
@@ -44,6 +44,7 @@ input{
     height: 28px;
     text-align: center;
     line-height: 25px;
+    background: #35514c;
 }
 .layui-btn-sm i{
     margin-left: -4px;
@@ -62,7 +63,7 @@ input{
     background: white;
     border-radius: 10px;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     margin-top: -250px;
     margin-left: -175px;
@@ -128,9 +129,9 @@ input{
     font-size: 14px;
 }
 .no{
-    margin-left: 64%;
-    text-decoration: none;
-    color: black;
+    position: absolute;
+    top:-2px ;
+    right: 2px;
 }
 .buttom{
     padding-top: 8%;
@@ -140,14 +141,19 @@ input{
     margin-left: 20%;
     padding-bottom: 12%;
 }
-#sure,#no{
+.p1{
+    font-size: 14px;
+    margin-left: 40%;
+    padding-bottom: 12%;
+}
+#sure,#no,.sure,.yes{
     display: inline-block;
     width: 20%;
     text-align: center;
     font-size: 14px;
     cursor: pointer;
 }
-#sure{
+#sure,.sure{
     height: 30px;
     line-height: 30px;
     background: #31b0d5;
@@ -155,20 +161,21 @@ input{
     margin-left: 49%;
     margin-right: 2%;
 }
-#no{
+#no,.yes{
     height: 29px;
     line-height: 29px;
     border: 1px solid darkgray;
 }
 
-/*.keep{*/
-    /*width: 20%;*/
-    /*height: 50px;*/
-    /*border: 1px solid darkgrey;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*margin-top: -25px;*/
-    /*margin-left: -10%;*/
-    /*background: white;*/
-/*}*/
+.keep{
+    width: 20%;
+    height: 160px;
+    border: 1px solid darkgrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -10%;
+    background: white;
+    display: none;
+}
