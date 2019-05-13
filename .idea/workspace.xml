@@ -49,8 +49,8 @@
           <file leaf-file-name="BSign.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/BSign.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+                <state relative-caret-position="288">
+                  <caret line="32" selection-start-line="32" selection-end-line="32" />
                 </state>
               </provider>
             </entry>
@@ -114,7 +114,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="273" />
     <option name="y" value="108" />
     <option name="width" value="654" />
@@ -200,12 +200,12 @@
       <workItem from="1557457109993" duration="31000" />
       <workItem from="1557457155062" duration="17091000" />
       <workItem from="1557643118265" duration="4151000" />
-      <workItem from="1557708429468" duration="9055000" />
+      <workItem from="1557708429468" duration="9493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38989000" />
+    <option name="totallyTimeSpent" value="39427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -377,8 +377,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/BSign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="288">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
