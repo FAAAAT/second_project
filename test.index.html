@@ -54,6 +54,65 @@
             width: 90%;
             margin: 0 auto;
         }
+
+        .E-form {
+            width: 30%;
+        }
+
+        #mask {
+            width: 350px;
+            height: 500px;
+            border: 1px solid gray;
+            background: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -250px;
+            margin-left: -175px;
+            padding-top: 30px;
+        }
+
+        #mask div {
+            margin-bottom: 20px;
+        }
+
+        #mask div span {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: right;
+            padding-left: 40px;
+        }
+
+        #mask p {
+            display: inline-block;
+            color: red;
+        }
+
+        #save,
+        #cancel {
+            width: 60px;
+            height: 30px;
+            border: none;
+            color: white;
+        }
+
+        #save {
+            background: lightseagreen;
+            margin-left: 110px;
+            margin-right: 20px;
+        }
+
+        #cancel {
+            background: #bea47a;
+        }
+
+        .close {
+            position: absolute;
+            top: 3px;
+            right: 4px;
+        }
     </style>
 </head>
 
@@ -85,6 +144,7 @@
             <div class="E-container">
                 托管中心
                 <!-- 表格 -->
+
                 <table class="layui-table" lay-skin="line">
                     <colgroup>
                         <!-- <col width="150">
@@ -99,10 +159,11 @@
                             <th>家长</th>
                             <th>电话</th>
                             <th>托管负责人</th>
+                            <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
+
                         <tr>
                             <td>贤心</td>
                             <td>男</td>
@@ -110,7 +171,10 @@
                             <td>wanglll</td>
                             <td>123456789</td>
                             <td>老马</td>
-
+                            <td>
+                                <i class="layui-icon layui-icon-edit"></i>
+                                <i class="layui-icon layui-icon-delete"></i>
+                            </td>
                         </tr>
                         <tr>
                             <td>许闲心</td>
@@ -119,7 +183,10 @@
                             <td>wanglll</td>
                             <td>123456789</td>
                             <td>老马</td>
-
+                            <td>
+                                <i class="layui-icon layui-icon-edit"></i>
+                                <i class="layui-icon layui-icon-delete"></i>
+                            </td>
                         </tr>
                         <tr>
                             <td>贤心</td>
@@ -128,6 +195,10 @@
                             <td>wanglll</td>
                             <td>123456789</td>
                             <td>老马</td>
+                            <td>
+                                <i class="layui-icon layui-icon-edit"></i>
+                                <i class="layui-icon layui-icon-delete"></i>
+                            </td>
                         </tr>
                         <tr>
                             <td>许闲心</td>
@@ -136,12 +207,58 @@
                             <td>wanglll</td>
                             <td>123456789</td>
                             <td>老马</td>
+                            <td>
+                                <i class="layui-icon layui-icon-edit"></i>
+                                <i class="layui-icon layui-icon-delete"></i>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">单选框</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="sex" value="男" title="男">
+                            <input type="radio" name="sex" value="女" title="女" checked>
+                        </div>
+                    </div>
+                </form>
             </div>
+
+        </div>
+        <div id="mask">
+            <form action="">
+                <a class="close" href=" ">×</a>
+                <div>
+                    <span>班级名称：<p>*</p></span><input type="text">
+                </div>
+                <div>
+                    <span>教室：<p>*</p></span><input type="text">
+                </div>
+                <div>
+                    <span>开班日期：</span><input type="text">
+                </div>
+                <div>
+                    <span>学生人数：<p>*</p></span><input type="text">
+                </div>
+                <div>
+                    <span>班主任：<p>*</p></span><input type="text">
+                </div>
+                <div>
+                    <span>状态：</span><input type="text">
+                </div>
+                <div>
+                    <span>创建人：</span><input type="text">
+                </div>
+                <div>
+                    <span>创建日期：</span><input type="text">
+                </div>
+                <button id="save">保存</button>
+                <button id="cancel">取消</button>
+            </form>
         </div>
     </div>
+
 </body>
 
 </html>
