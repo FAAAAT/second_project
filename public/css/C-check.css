@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.query{
+    font-size: 16px;
+}
+.t1,.t2{
+    margin-right: 150px;
+}
+/*.layui-table{*/
+/*text-align: center;*/
+/*}*/
+.btn1,.btn2{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background:lightseagreen;
+    color: white;
+}
+.btn1{
+    margin-left: 50px;
+    margin-right: 170px;
+}
+input{
+    width: 120px;
+    height: 25px;
+}
+.layui-table th{
+    text-align:center;
+    background:lightseagreen;
+    color: white;
+}
+.layui-table td{
+    text-align:center;
+}
+.sel{
+    border: none;
+}
+.layui-btn-sm{
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 25px;
+}
+.layui-btn-sm i{
+    margin-left: -4px;
+}
+#test1{
+    margin-left: 500px;
+}
