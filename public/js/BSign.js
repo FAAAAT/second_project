@@ -30,7 +30,7 @@ oUser.blur(function(){
       oYes.css('display','none')
    }else {
      //不为空的时候判断用户名是否正确
-       
+
        if (localStorage.getItem(oUserVal)){
            oNo.css('display','none');
            oYes.css('display','block');
