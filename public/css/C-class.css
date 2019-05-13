@@ -161,14 +161,14 @@ input{
     border: 1px solid darkgray;
 }
 
-.keep{
-    width: 20%;
-    height: 50px;
-    border: 1px solid darkgrey;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -25px;
-    margin-left: -10%;
-    background: white;
-}
+/*.keep{*/
+    /*width: 20%;*/
+    /*height: 50px;*/
+    /*border: 1px solid darkgrey;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-top: -25px;*/
+    /*margin-left: -10%;*/
+    /*background: white;*/
+/*}*/
