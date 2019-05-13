@@ -1,119 +1,102 @@
-/*设置主页面宽度*/
-#B-box{
-    width: 1340px;
+*{
+    margin: 0;
+    padding: 0;
 }
-/*左右板块浮动*/
 #B-left,#B-right{
     float: left;
 }
-/*设置左边宽度*/
 #B-left{
-    width: 180px;
-    height: 660px;
     background: #35514c;
-    color: white;
-}
-/*软件名称*/
-#B-name{
-    background: #264743;
-    height: 50px;
+    width: 180px;
     padding-left: 1em;
+}
+/*系统名称*/
+#B-name{
+    margin-left: -15px;
+    width: 180px;
     font-size: 20px;
-    line-height: 50px;
-    margin-bottom: 20px;
-}
-/*用户头像及用户名*/
-#B-user{
+    color: white;
     padding: 10px 0 10px 20px;
-    border-top: #07957c 1px solid;
-    border-bottom: #07957c 1px solid;
-    margin-bottom: 20px;
+    background: #223e39;
 }
-/*用户头像*/
+/*用户名及头像*/
+#B-user{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    width: 180px;
+    padding:  10px 0 10px 1em;
+}
 #B-head{
-    float: left;
     width: 60px;
-    height: 60px;
-    border: #07957c 2px solid;
+    height:60px;
+    border: #00dc00 solid 1px;
     border-radius: 50%;
+    float: left;
+    text-align: center;
+
 }
-/*用户名*/
 #B-user-name>span{
     font-size: 18px;
-    line-height: 60px;
-    padding-left: 1em;
-    font-weight: bold;
-}
-
-
-
-
-
-
-/*内容选项卡*/
-#B-tab>ul>li{
-    height: 49px;
-    line-height: 50px;
-    padding-left: 1em;
-    font-size: 14px;
-}
-
-/*内容选显卡的a标签*/
-#B-tab>ul>li>a{
-    padding-left: 10px;
     color: white;
-    text-decoration: none;
+    line-height: 60px;
+    margin-left: 1em;
 }
-/*内容选显卡的span标签*/
+
+#B-tab>ul>li{
+    width: 180px;
+    margin-left: -15px;
+    height: 50px;
+    line-height: 50px;
+}
+
 #B-tab>ul>li>span{
     padding-left: 1em;
+    color: white;
+    font-size: 16px;
 }
-/*内容选项卡的logo*/
-#B-tab>ul>li>img{
-    height: 40px;
-    padding-left: 2em;
+#B-tab>ul>li>a{
+    color: white;
+    font-size: 16px;
+    padding-left: 1em;
+    text-decoration: none;
+}
+#B-end-logo{
+    padding-left: 1em;
+    padding-top: 1em;
+}
+#B-end-logo>img{
     opacity: 0.3;
 }
-/*右侧大框*/
-#B-right{
-    padding: 10px 10px 10px 10px;
-    width: 1160px;
-    height: 660px;
-    background:#ebeef1 ;
-}
 
-/*右侧顶部大框*/
+
+#B-right{
+    padding: 10px 10px ;
+    background: #ebeef1;
+}
 #B-right-logo{
-    padding: 0 0 10px 0;
+    position: relative;
+    margin-bottom: 1em;
 }
 #B-right-logo>div{
     float: left;
 }
-/*右侧顶部logo*/
 #B-right-logo-img>img{
-   width: 70px;
+    width: 80px;
 }
-/*退出按钮和闹铃的div*/
 #B-right-exit{
-    height: 52px;
-    line-height: 52px;
-    margin-left: 940px;
+    position: absolute;
+    top: 0;
+    right: 1em;
 }
-/*闹铃*/
 #B-right-exit>img{
-    vertical-align: -4px;
-    width: 24px;
+    vertical-align: -8px;
+    margin-right: 10px;
 }
-/*退出*/
-#B-right-exit>a{
-    padding-left: 20px;
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-}
-/*显示区域*/
-iframe{
-    width: 1138px;
-    height: 578px;
+#B-boss{
     background: white;
+}
+iframe{
+    width: 100%;
+    height: 100%;
 }

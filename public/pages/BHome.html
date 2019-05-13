@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../css/Bhome.css">
 </head>
 <body>
-    <div >
-        <div id="B-box">
-            <div id="B-left" >
+    <div class="container-fluid">
+        <div id="B-box" class="row ">
+            <div id="B-left">
                 <!--名称-->
                 <div id="B-name">System</div>
                 <!--用户头像及用户名-->
@@ -31,43 +31,38 @@
                 <div id="B-tab">
                     <ul>
                         <li><span class="iconfont icon-kongzhitai"></span><a href="" target="B-boss">控制台</a></li>
-<<<<<<< HEAD
                         <li><span class="iconfont icon-weibiaoti-"></span><a href="" target="B-boss">教师管理</a></li>
-=======
-                        <li><span class="iconfont icon-weibiaoti-"></span><a href="../html/D-department.html" target="B-boss">教师管理</a></li>
->>>>>>> dc45da270ae43b7905d9c66afc8dd519aa9b0fb3
-                        <li><span class="iconfont icon-banji"></span><a href="C-pages/C-class.html" target="B-boss">班级管理</a></li>
+                        <li><span class="iconfont icon-banji"></span><a href="" target="B-boss">班级管理</a></li>
                         <li><span class="iconfont icon-xuesheng"></span><a href="" target="B-boss">学生管理</a></li>
-                        <li><span class="iconfont icon-kaoqin"></span><a href="C-pages/C-check.html" target="B-boss">考勤记录</a></li>
+                        <li><span class="iconfont icon-kaoqin"></span><a href="" target="B-boss">考勤记录</a></li>
                         <li><span class="iconfont icon-zhaopian"></span><a href="" target="B-boss">照片墙</a></li>
                         <li><span class="iconfont icon-quanxian"> </span><a href="" target="B-boss">权限管理</a></li>
                         <li><span class="iconfont icon-lingdang"></span><a href="" target="B-boss">公告</a></li>
                         <!--logo-->
-                        <li><img src="../images/logo.png" alt=""></li>
                     </ul>
+                </div>
+                <div id="B-end-logo">
+                    <img src="../images/logo.png" alt="">
                 </div>
             </div>
             <!--右侧窗口-->
             <div id="B-right" >
-                <div id="B-right-box" >
-                    <div id="B-right-logo" class="clearfix">
-                        <!--logo-->
-                        <div id="B-right-logo-img">
-                            <img src="../images/logo.png" alt="">
-                        </div>
-                        <!--消息提醒及退出系统-->
-                        <div id="B-right-exit">
-                            <img src="../images/ld.png" alt="">
-                            <a href=""> 退出登录 <i class=" layui-icon layui-icon-triangle-r"></i> </a>
-                        </div>
+                <div id="B-right-logo" class="clearfix">
+                    <!--logo-->
+                    <div id="B-right-logo-img">
+                        <img src="../images/logo.png" alt="">
                     </div>
-<<<<<<< HEAD
-                    <iframe name="B-boss" frameborder="0" scrolling="no"></iframe>
-=======
-                    <!--内容显示窗口-->
-                    <iframe name="B-boss" frameborder="0"></iframe>
->>>>>>> dc45da270ae43b7905d9c66afc8dd519aa9b0fb3
+                    <!--消息提醒及退出系统-->
+                    <div id="B-right-exit">
+                        <img src="../images/ld.png" alt="">
+                        <a href=""> 退出登录 <i class=" layui-icon layui-icon-triangle-r"></i> </a>
+                    </div>
                 </div>
+                <!--内容显示窗口-->
+                <div id="B-boss">
+                    <iframe name="B-boss" frameborder="0" scrolling="no"></iframe>
+                </div>
+
             </div>
         </div>
     </div>
