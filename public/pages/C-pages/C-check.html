@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hay-on-way</title>
+    <link rel="stylesheet" href="../../util/layui/css/layui.css">
+    <link rel="stylesheet" href="../../util/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/C-check.css">
+</head>
+<body>
+    <div class="layui-container">
+        <div class="query layui-row">
+            <form action="">
+                <span class="s1">教师姓名：</span><input type="text" class="t1">
+                <span>部门：</span><input type="text" class="t2">
+                <button  class="layui-btn btn1">查询</button>
+                <button class="layui-btn btn2">
+                    <i class="layui-icon">&#xe608;</i> 添加
+                </button>
+            </form>
+        </div>
+        <div>
+            <table class="layui-table" lay-skin="line">
+                <colgroup>
+                    <col width="100">
+                    <col width="100">
+                </colgroup>
+                <thead class="head">
+                <tr>
+                    <th>教师姓名</th>
+                    <th>部门</th>
+                    <th>职务</th>
+                    <th>授课课程</th>
+                    <th>出勤情况</th>
+                    <th>休假</th>
+                    <th>创建人</th>
+                    <th>创建日期</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>吴彦祖</td>
+                    <td>
+                        <select class="sel">
+                        <option>总务处</option>
+                        <option>教导处</option>
+                        <option>德育处</option>
+                    </select>
+                    </td>
+                    <td>
+                        <select class="sel">
+                            <option>校长</option>
+                            <option>副校长</option>
+                            <option>主任</option>
+                            <option>讲师</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="sel">
+                            <option>语文</option>
+                            <option>数学</option>
+                            <option>幼儿英语</option>
+                            <option>体育</option>
+                            <option>绘画</option>
+                            <option>舞蹈</option>
+                            <option>音乐</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="sel">
+                            <option>正常</option>
+                            <option>迟到</option>
+                            <option>早退</option>
+                            <option>请假</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="sel">
+                            <option>无</option>
+                            <option>病假</option>
+                            <option>事假</option>
+                            <option>产假</option>
+                            <option>年假</option>
+                        </select>
+                    </td>
+                    <td>
+                        admin
+                    </td>
+                    <td>
+                        2019-10-10
+                    </td>
+                    <td>
+                        <button class="layui-btn layui-btn-sm">
+                            <i class="layui-icon sm1">&#xe642;</i>
+                        </button>
+                        <button class="layui-btn layui-btn-sm">
+                            <i class="layui-icon sm1">&#xe640;</i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="test1"></div>
+</body>
+<script src="../../util/layui/layui.js"></script>
+<script>
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+        });
+    });
+</script>
+</html>
