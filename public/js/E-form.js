@@ -67,7 +67,7 @@ class Form_4 {
                 }
             }
         }
-        this.addnew()
+        // this.addnew()
     }
     change() {
         let ok = true
@@ -94,12 +94,14 @@ class Form_4 {
     }
     addcheck(obj) {
         Object.assign(this, obj)
+        return this
     }
-    addnew(test) {
+    addnew(a) {
         let that = this
-        document.querySelector(test||"#test").onclick = function(){
+        console.log(a)
+        document.querySelector(a||"#test").onclick = function(){
             that.form_dom.innerHTML = " "
-            that.html = 
+            that.html =
             `
                 <div id="mask">
                     <a class="close" href="#">×</a>
@@ -125,7 +127,7 @@ class Form_4 {
             that.form_dom.querySelector("#save").onclick = function () {
                 if (that.save()) {
                     that.form_dom.innerHTML = " "
-                    that.html = 
+                    that.html =
                     `
                         <div id="mask">
                             <a class="close" href="#">×</a>
@@ -136,7 +138,7 @@ class Form_4 {
             }
             that.form_dom.querySelector("#cancel").onclick = function () {
                 that.form_dom.innerHTML = " "
-                that.html = 
+                that.html =
                 `
                     <div id="mask">
                         <a class="close" href="#">×</a>
@@ -145,6 +147,7 @@ class Form_4 {
                 this.onclick = null
             }
         }
+        return this
     }
     save(){
         let check = this.form_dom.querySelectorAll("input")
@@ -153,6 +156,7 @@ class Form_4 {
         for (let i = 0; i < check.length; i++) {
             if (this[this.th[i]]) {
                 if (this[this.th[i]].func(check[i].value)) {
+                    console.log(check[i].value)
                     td += `<td>${check[i].value}</td>`
                     // this.form_dom.querySelectorAll("p")[i].innerText = this[this.th[i]].false
                 }
@@ -175,5 +179,37 @@ class Form_4 {
             this.el.querySelector("tbody").append(a)
         }
         return ok
+    }
+    search(input,btn,color){
+        let that = this
+        let trlist = []
+        document.querySelector(btn).addEventListener("click", function(){
+            let value = document.querySelector(input).value
+            trlist = [...that.el.querySelectorAll("tr")].slice(1)
+            if(!value.trim()){
+                for(let tr of trlist){
+                    tr.style.display = ''
+                    tr.style.color = ""
+                }
+                return
+            }
+            for(let tr of trlist){
+                let ok = false
+                for( let i=0;i<tr.children.length; i++){
+                    // console.log(tr.children[i].innerText.indexOf(value))
+                    if(tr.children[i].innerText.indexOf(value) != -1){
+                        ok = true
+                        break
+                    }
+                }
+                if(ok){
+                    tr.style.display = ''
+                    tr.style.color = color||"orange"
+                }else{
+                    tr.style.display = 'none'
+                }
+            }
+        })
+        return this
     }
 }
