@@ -36,7 +36,7 @@
         }
 
         .layui-col-md9 {
-            height: auto;
+            height: 700px;
             background: #eee;
         }
 
@@ -56,7 +56,7 @@
 
         .F-content {
             width: 90%;
-            height: 500px;
+            height: 600px;
             background: white;
             box-shadow: 1px 1px 5px #999;
             margin: 10px auto;
@@ -72,6 +72,7 @@
             top: 10px;
             left: 0;
         }
+
         .layui-table {
             width: 90%;
             position: absolute;
@@ -88,7 +89,7 @@
         #test1 {
             width: 90%;
             position: absolute;
-            top: 85%;
+            top: 90%;
             left: 0;
         }
 
@@ -113,7 +114,6 @@
             margin-top: -250px;
             margin-left: -175px;
             padding-top: 30px;
-            display: none;
         }
 
         #mask div {
@@ -174,16 +174,11 @@
                 <div class="F-content">
                     <div class="F-head">
                         <div class="F-name">
-                            <span>班级名称:</span>
-                            <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
-                                autocomplete="off" class="layui-input">
+                            <span>搜索:</span>
+                            <input type="text" name="title" required lay-verify="required" placeholder="查询"
+                                autocomplete="off" class="layui-input" id="input1">
                         </div>
-                        <div class="F-name">
-                            <span>班主任:</span>
-                            <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
-                                autocomplete="off" class="layui-input">
-                        </div>
-                        <button class="layui-btn">查询</button>
+                        <button class="layui-btn" id="check">查询</button>
                         <button class="layui-btn" id='F-add'>添加用户</button>
                     </div>
                     <table class="layui-table" lay-skin="line">
@@ -201,80 +196,113 @@
                                 <th>编号</th>
                                 <th>创建人</th>
                                 <th>创建日期</th>
+                                <th>操作</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>2019</td>
-                                <td>小明</td>
+                                <td>2018</td>
+                                <td>小红</td>
+                                <td>女</td>
+                                <td>20190001</td>
+                                <td>admin</td>
+                                <td>2019/05/05</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2017</td>
+                                <td>小刚</td>
+                                <td>男</td>
+                                <td>20190002</td>
+                                <td>admin</td>
+                                <td>2018/05/05</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2015</td>
+                                <td>小王</td>
+                                <td>男</td>
+                                <td>20190002</td>
+                                <td>admin</td>
+                                <td>2019/05/05</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2014</td>
+                                <td>小李</td>
                                 <td>男</td>
                                 <td>20190001</td>
                                 <td>admin</td>
                                 <td>2019/05/05</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>2019</td>
-                                <td>小明</td>
+                                <td>小张</td>
                                 <td>男</td>
-                                <td>20190002</td>
+                                <td>20190003</td>
                                 <td>admin</td>
                                 <td>2019/05/05</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
+                                <td>小飞</td>
+                                <td>女</td>
+                                <td>20190009</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/04/12</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
                             </tr>
                             <tr>
                                 <td>7</td>
                                 <td>2019</td>
                                 <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
+                                <td>女</td>
+                                <td>20190007</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/02/22</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
                             </tr>
                             <tr>
                                 <td>8</td>
                                 <td>2019</td>
                                 <td>小明</td>
                                 <td>男</td>
-                                <td>20190002</td>
+                                <td>20190008</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/05/11</td>
+                                <td>
+                                    <i class="layui-icon layui-icon-edit"></i>
+                                    <i class="layui-icon layui-icon-delete"></i>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -283,49 +311,122 @@
             </div>
         </div>
     </div>
-    <div id="mask">
-            <form action="">
-                <a class="close" href=" ">×</a>
-                <div>
-                    <span>序号：<p>*</p ></span><input type="text">
-                </div>
-                <div>
-                    <span>班级：<p>*</p ></span><input type="text">
-                </div>
-                <div>
-                    <span>教师姓名：</span><input type="text">
-                </div>
-                <div>
-                    <span>性别：<p>*</p ></span><input type="text">
-                </div>
-                <div>
-                    <span>编号：<p>*</p ></span><input type="text">
-                </div>
-                <div>
-                    <span>创建人：</span><input type="text">
-                </div>
-                <div>
-                    <span>创建日期：</span><input type="text">
-                </div>
-                <button id="save">保存</button>
-                <button id="cancel">取消</button>
-            </form>
-        </div>
 </body>
 <script>
-    
+    let oIpt1 = document.getElementById('input1');
+    let oIpt2 = document.getElementById('input2');
+    let oCheck = document.getElementById('check');
+    localStorage.setItem('2019','大明')
+
+    oCheck.onclick = function(){
+        let sName1 = oIpt1.value;
+        let sName2 = oIpt2.value;
+
+        if(localStorage.getItem(sName1||sName2)){
+             alert('查询成功')
+         }else{
+             alert('字段格式不正确')
+         }
+    };
+
     layui.use('laypage', function () {
         var laypage = layui.laypage;
         //执行一个laypage实例
         laypage.render({
-            elem: 'test1' 
-            , count: 50 
+            elem: 'test1'
+            , count: 50
         });
     });
-    $(function(){
-        $('#F-add').click(function(){
-            $('#mask').css('display','block');
-        })
-    });
 </script>
+<script src="../js/E-form.js"></script>
+<script>
+    let a = new Form_4(".layui-table").addnew("#F-add").addcheck({
+        "序号": {
+            func: function (str) {
+                if (str.trim()) {
+
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "班级": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "教师姓名": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "性别": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "编号": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "创建人": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+        "创建日期": {
+            func: function (str) {
+                if (str.trim()) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            },
+            ok: "ok",
+            false: "空字段"
+        },
+    }).search("#input1", "#check","green")
+</script>
+
 </html>

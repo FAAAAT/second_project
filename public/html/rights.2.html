@@ -97,7 +97,7 @@
 
         /*文本对齐方式*/
         .text-center {
-            text-align: center;
+            text-align: right;
         }
 
     </style>
@@ -146,14 +146,7 @@
         tbData: [{
             tempId: new Date().valueOf(),
             type: 2,
-            name: '王老师',
-            state: 1,
-            id:'oid1'
-        }],
-        tyData: [{
-            tempId: new Date().valueOf(),
-            type: 2,
-            name: '男',
+            name: '',
             state: 1
         }],
         typeData: [
@@ -207,8 +200,17 @@
                         return '<a lay-event="type"></a><select name="type" lay-filter="type"><option value="">请选择职位</option>' + options + '</select>';
                     }
                 },
-                { field: 'name', title: '名称（name）', edit: 'text',id:'oid1' },
-                { field: 'name', title: '性别（sex）', edit: 'text' },
+                { field: 'name', title: '姓名（name）', edit: 'text' },
+                {
+                    field: 'state', title: '性别（sex）', event: 'state', templet: function (d) {
+                        var html = ['<input type="checkbox" name="state" lay-skin="switch" lay-text="男|女"'];
+                        html.push(d.state > 0 ? ' checked' : '');
+                        html.push('>');
+                        return html.join('');
+                    }
+                },
+                { field: 'name', title: '年纪（age）', edit: 'numbe' },
+                { field: 'name', title: '编号（number）', edit: 'number' },
                 {
                     field: 'state', title: '是否启用（state）', event: 'state', templet: function (d) {
                         var html = ['<input type="checkbox" name="state" lay-skin="switch" lay-text="是|否"'];
