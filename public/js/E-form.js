@@ -67,7 +67,7 @@ class Form_4 {
                 }
             }
         }
-        this.addnew()
+        // this.addnew()
     }
     change() {
         let ok = true
@@ -95,9 +95,10 @@ class Form_4 {
     addcheck(obj) {
         Object.assign(this, obj)
     }
-    addnew(test) {
+    addnew(a) {
         let that = this
-        document.querySelector(test||"#test").onclick = function(){
+        console.log(a)
+        document.querySelector(a||"#test").onclick = function(){
             that.form_dom.innerHTML = " "
             that.html = 
             `
@@ -153,6 +154,7 @@ class Form_4 {
         for (let i = 0; i < check.length; i++) {
             if (this[this.th[i]]) {
                 if (this[this.th[i]].func(check[i].value)) {
+                    console.log(check[i].value)
                     td += `<td>${check[i].value}</td>`
                     // this.form_dom.querySelectorAll("p")[i].innerText = this[this.th[i]].false
                 }
