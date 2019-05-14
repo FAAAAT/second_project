@@ -146,7 +146,7 @@
         tbData: [{
             tempId: new Date().valueOf(),
             type: 2,
-            name: '未填写',
+            name: '',
             state: 1
         }],
         typeData: [
@@ -201,7 +201,14 @@
                     }
                 },
                 { field: 'name', title: '姓名（name）', edit: 'text' },
-                { field: 'name', title: '性别（sex）', edit: 'text' },
+                {
+                    field: 'state', title: '性别（sex）', event: 'state', templet: function (d) {
+                        var html = ['<input type="checkbox" name="state" lay-skin="switch" lay-text="男|女"'];
+                        html.push(d.state > 0 ? ' checked' : '');
+                        html.push('>');
+                        return html.join('');
+                    }
+                },
                 { field: 'name', title: '年纪（age）', edit: 'numbe' },
                 { field: 'name', title: '编号（number）', edit: 'number' },
                 {
