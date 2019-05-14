@@ -177,7 +177,7 @@ class Form_4 {
         }
         return ok
     }
-    search(input,btn){
+    search(input,btn,color){
         let that = this
         let trlist = []
         document.querySelector(btn).addEventListener("click", function(){
@@ -201,7 +201,7 @@ class Form_4 {
                 }
                 if(ok){
                     tr.style.display = ''
-                    tr.style.color = "orange"
+                    tr.style.color = color||"orange"
                 }else{
                     tr.style.display = 'none'
                 }
