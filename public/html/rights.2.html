@@ -200,7 +200,7 @@
                         return '<a lay-event="type"></a><select name="type" lay-filter="type"><option value="">请选择职位</option>' + options + '</select>';
                     }
                 },
-                { field: 'name', title: '姓名（name）', edit: 'text' },
+                { field: 'name1', title: '姓名（name）', edit: 'text' },
                 {
                     field: 'state', title: '性别（sex）', event: 'state', templet: function (d) {
                         var html = ['<input type="checkbox" name="state" lay-skin="switch" lay-text="男|女"'];
@@ -209,8 +209,9 @@
                         return html.join('');
                     }
                 },
-                { field: 'name', title: '年纪（age）', edit: 'numbe' },
-                { field: 'name', title: '编号（number）', edit: 'number' },
+                { field: 'name2', title: '年龄（age）', edit: 'text' },
+                { field: 'name3', title: '编号（number）', edit: 'text' },
+                { field: 'name4', title: '地址（address）', edit: 'text' },
                 {
                     field: 'state', title: '是否启用（state）', event: 'state', templet: function (d) {
                         var html = ['<input type="checkbox" name="state" lay-skin="switch" lay-text="是|否"'];
