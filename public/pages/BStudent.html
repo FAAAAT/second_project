@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/Bootstrap.css">
+    <link rel="stylesheet" href="../util/layui/css/layui.css">
+    <link rel="stylesheet" href="../font/B/iconfont.css">
+    <script src="../util/jquery-3.4.0.js"></script>
+    <script src="../js/Bootstrap.js"></script>
+    <script src="../util/layui/layui.js"></script>
+    <link rel="stylesheet" href="../css/BStudent.css">
+</head>
+<body>
+    <div class="container-fluid" id="B-box">
+        <div class=" row clearfix" id="B-seo" >
+            <div id="B-class" class="clearfix col-sm-3 col-xs-12">
+                <p class="s1">班级名称：</p>
+                <input  type="text" class="form-control">
+            </div>
+            <div id="B-class-boss" class="clearfix col-sm-3 col-xs-12">
+                <p>班主任：</p>
+                <input  type="text" class="form-control">
+            </div>
+            <div id="B-button"class="col-sm-offset-2 col-sm-4 col-xs-12">
+                <button  class="layui-btn btn">查询</button>
+                <button class="layui-btn btn">
+                    <i class="layui-icon">&#xe608;</i> 添加
+                </button>
+            </div>
+        </div>
+        <div id="B-content">
+            <table class="layui-table" lay-skin="line" id="tab">
+                <thead class="head">
+                <tr id="B-head">
+                    <th>班级名称</th>
+                    <th>教室</th>
+                    <th>开班日期</th>
+                    <th>学生人数</th>
+                    <th>班主任</th>
+                    <th>状态</th>
+                    <th>创建人</th>
+                    <th>创建日期</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody id="mapAddress">
+                <tr>
+                    <td>小班</td>
+                    <td>一教101</td>
+                    <td>2019-09-1</td>
+                    <td class="aaa">30</td>
+                    <td>吴彦祖</td>
+                    <td>
+                        <select class="sel">
+                            <option>小班</option>
+                            <option>中班</option>
+                            <option>大班</option>
+                        </select>
+                    </td>
+                    <td>
+                        admin
+                    </td>
+                    <td>
+                        2019-10-10
+                    </td>
+                    <td>
+                        <button class="layui-btn layui-btn-sm edio">
+                            <i class="layui-icon sm1">&#xe642;</i>
+                        </button>
+                        <button class="layui-btn layui-btn-sm del">
+                            <i class="layui-icon sm1">&#xe640;</i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--弹框-->
+    <div class="all">
+        <div id="mask">
+            <a class="close" href="javasript:;">×</a>
+            <div>
+                <span>班级名称：<p>*</p></span><input type="text" placeholder="小班">
+            </div>
+            <div>
+                <span>教室：<p>*</p></span><input type="text" placeholder="一教101">
+            </div>
+            <div>
+                <span>开班日期：</span><input type="text" placeholder="2019-5-15">
+            </div>
+            <div>
+                <span>学生人数：<p>*</p></span><input type="text" placeholder="请输入学生人数">
+            </div>
+            <div>
+                <span>班主任：<p>*</p></span><input type="text" placeholder="请输入班主任姓名">
+            </div>
+            <div>
+                <span>状态：</span><input type="text" placeholder="大班">
+            </div>
+            <div>
+                <span>创建人：</span><input type="text" value="admin">
+            </div>
+            <div>
+                <span>创建日期：</span><input type="text" placeholder="2019-5-15">
+            </div>
+            <button id="save">保存</button>
+            <button id="cancel">取消</button>
+        </div>
+    </div>
+
+    <!--保存成功弹框提示-->
+    <div class="keep">
+        <div class="top">
+            <span class="prompt">保存提示</span>
+            <a class="no" href="javascript:;">×</a>
+        </div>
+        <div class="buttom">
+            <p class="p1">保存成功！</p>
+            <div class="sure">取消</div>
+            <div class="yes">确定</div>
+        </div>
+    </div>
+    <!--删除小弹框提示-->
+    <div class="mask">
+        <a class="no" href="javascript:;">×</a>
+        <div class="top">
+            <span class="prompt">删除提示</span>
+        </div>
+        <div class="buttom">
+            <p id="p1">确定要删除这项内容吗？</p>
+            <div id="sure">取消</div>
+            <div id="no" id="close">确定</div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/BStudent.js"></script>
+</html>
