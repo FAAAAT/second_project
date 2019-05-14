@@ -174,14 +174,9 @@
                 <div class="F-content">
                     <div class="F-head">
                         <div class="F-name">
-                            <span>班级名称:</span>
-                            <input type="text" name="title" required lay-verify="required" placeholder="请输入查询班级"
+                            <span>搜索:</span>
+                            <input type="text" name="title" required lay-verify="required" placeholder="查询"
                                 autocomplete="off" class="layui-input" id="input1">
-                        </div>
-                        <div class="F-name">
-                            <span>班主任:</span>
-                            <input type="text" name="title" required lay-verify="required" placeholder="请输入查询名称"
-                                autocomplete="off" class="layui-input" id="input2">
                         </div>
                         <button class="layui-btn" id="check">查询</button>
                         <button class="layui-btn" id='F-add'>添加用户</button>
@@ -207,9 +202,9 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
+                                <td>2018</td>
+                                <td>小红</td>
+                                <td>女</td>
                                 <td>20190001</td>
                                 <td>admin</td>
                                 <td>2019/05/05</td>
@@ -220,12 +215,12 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>2019</td>
-                                <td>小明</td>
+                                <td>2017</td>
+                                <td>小刚</td>
                                 <td>男</td>
                                 <td>20190002</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2018/05/05</td>
                                 <td>
                                     <i class="layui-icon layui-icon-edit"></i>
                                     <i class="layui-icon layui-icon-delete"></i>
@@ -233,8 +228,8 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>2019</td>
-                                <td>小明</td>
+                                <td>2015</td>
+                                <td>小王</td>
                                 <td>男</td>
                                 <td>20190002</td>
                                 <td>admin</td>
@@ -246,10 +241,10 @@
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>2019</td>
-                                <td>小明</td>
+                                <td>2014</td>
+                                <td>小李</td>
                                 <td>男</td>
-                                <td>20190002</td>
+                                <td>20190001</td>
                                 <td>admin</td>
                                 <td>2019/05/05</td>
                                 <td>
@@ -260,9 +255,9 @@
                             <tr>
                                 <td>5</td>
                                 <td>2019</td>
-                                <td>小明</td>
+                                <td>小张</td>
                                 <td>男</td>
-                                <td>20190002</td>
+                                <td>20190003</td>
                                 <td>admin</td>
                                 <td>2019/05/05</td>
                                 <td>
@@ -273,11 +268,11 @@
                             <tr>
                                 <td>6</td>
                                 <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
+                                <td>小飞</td>
+                                <td>女</td>
+                                <td>20190009</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/04/12</td>
                                 <td>
                                     <i class="layui-icon layui-icon-edit"></i>
                                     <i class="layui-icon layui-icon-delete"></i>
@@ -287,10 +282,10 @@
                                 <td>7</td>
                                 <td>2019</td>
                                 <td>小明</td>
-                                <td>男</td>
-                                <td>20190002</td>
+                                <td>女</td>
+                                <td>20190007</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/02/22</td>
                                 <td>
                                     <i class="layui-icon layui-icon-edit"></i>
                                     <i class="layui-icon layui-icon-delete"></i>
@@ -301,9 +296,9 @@
                                 <td>2019</td>
                                 <td>小明</td>
                                 <td>男</td>
-                                <td>20190002</td>
+                                <td>20190008</td>
                                 <td>admin</td>
-                                <td>2019/05/05</td>
+                                <td>2019/05/11</td>
                                 <td>
                                     <i class="layui-icon layui-icon-edit"></i>
                                     <i class="layui-icon layui-icon-delete"></i>
@@ -345,9 +340,7 @@
 </script>
 <script src="../js/E-form.js"></script>
 <script>
-    let a = new Form_4(".layui-table")
-    a.addnew("#F-add")
-    a.addcheck({
+    let a = new Form_4(".layui-table").addnew("#F-add").addcheck({
         "序号": {
             func: function (str) {
                 if (str.trim()) {
@@ -433,9 +426,7 @@
             ok: "ok",
             false: "空字段"
         },
-
-
-    })
+    }).search("#input1", "#check")
 </script>
 
 </html>
