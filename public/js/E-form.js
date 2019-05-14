@@ -67,7 +67,6 @@ class Form_4 {
                 }
             }
         }
-        this.addnew()
     }
     change() {
         let ok = true
