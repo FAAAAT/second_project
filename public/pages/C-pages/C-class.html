@@ -21,7 +21,7 @@
                 </button>
         </div>
         <div>
-            <table class="layui-table" lay-skin="line">
+            <table class="layui-table" lay-skin="line" id="tab">
                 <colgroup>
                     <col width="100">
                     <col width="100">
@@ -39,7 +39,7 @@
                     <th>操作</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="mapAddress">
                 <tr>
                     <td>小班</td>
                     <td>一教101</td>
@@ -242,35 +242,38 @@
     </div>
     <div id="test1"></div>
     <!--弹框-->
-    <div id="mask">
+    <div class="all">
+        <div id="mask">
             <a class="close" href="javasript:;">×</a>
             <div>
-                <span>班级名称：<p>*</p></span><input type="text">
+                <span>班级名称：<p>*</p></span><input type="text" placeholder="小班">
             </div>
             <div>
-                <span>教室：<p>*</p></span><input type="text">
+                <span>教室：<p>*</p></span><input type="text" placeholder="一教101">
             </div>
             <div>
-                <span>开班日期：</span><input type="text">
+                <span>开班日期：</span><input type="text" placeholder="2019-5-15">
             </div>
             <div>
-                <span>学生人数：<p>*</p></span><input type="text">
+                <span>学生人数：<p>*</p></span><input type="text" placeholder="请输入学生人数">
             </div>
             <div>
-                <span>班主任：<p>*</p></span><input type="text">
+                <span>班主任：<p>*</p></span><input type="text" placeholder="请输入班主任姓名">
             </div>
             <div>
-                <span>状态：</span><input type="text">
+                <span>状态：</span><input type="text" placeholder="大班">
             </div>
             <div>
-                <span>创建人：</span><input type="text">
+                <span>创建人：</span><input type="text" value="admin">
             </div>
             <div>
-                <span>创建日期：</span><input type="text">
+                <span>创建日期：</span><input type="text" placeholder="2019-5-15">
             </div>
             <button id="save">保存</button>
             <button id="cancel">取消</button>
+        </div>
     </div>
+
     <!--保存成功弹框提示-->
     <div class="keep">
         <div class="top">
@@ -285,16 +288,17 @@
     </div>
     <!--删除小弹框提示-->
     <div class="mask">
-        <a class="no" href="javascript:;">×</a>
-        <div class="top">
-            <span class="prompt">删除提示</span>
+            <a class="no" href="javascript:;">×</a>
+            <div class="top">
+                <span class="prompt">删除提示</span>
+            </div>
+            <div class="buttom">
+                <p id="p1">确定要删除这项内容吗？</p>
+                <div id="sure">取消</div>
+                <div id="no" id="close">确定</div>
+            </div>
         </div>
-        <div class="buttom">
-            <p id="p1">确定要删除这项内容吗？</p>
-            <div id="sure">取消</div>
-            <div id="no" id="close">确定</div>
-        </div>
-    </div>
+
 
 </body>
     <script src="../../util/layui/layui.js"></script>
