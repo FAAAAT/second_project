@@ -1,0 +1,37 @@
+/* 屏幕小于960时候的显示效果 */
+
+@media (max-width:960px){
+
+    .el-leftbox{
+        width: 100%;
+        height: 660px;
+        position:relative;
+    }
+    .el-headbox{
+      padding: 12px 0;
+    }
+    /* 图片定位 */
+
+    .el-imgbox{
+        margin-top:0;
+        margin-left: 0;
+        position: absolute;
+        right: 40px;
+        bottom: 75px;
+        opacity: 0.3;
+    }
+
+    .el-rightbox{
+        margin: 0 ;
+    } 
+
+
+
+    .el-pictures .el-pisingle{
+        width: 186px;
+        margin-right:10px;
+        margin-top: 20px;
+    }
+}
+
+
