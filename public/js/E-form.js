@@ -67,6 +67,7 @@ class Form_4 {
                 }
             }
         }
+        // this.addnew()
     }
     change() {
         let ok = true
@@ -95,11 +96,12 @@ class Form_4 {
         Object.assign(this, obj)
         return this
     }
-    addnew(test) {
+    addnew(a) {
         let that = this
-        document.querySelector(test||"#test").onclick = function(){
+        console.log(a)
+        document.querySelector(a||"#test").onclick = function(){
             that.form_dom.innerHTML = " "
-            that.html = 
+            that.html =
             `
                 <div id="mask">
                     <a class="close" href="#">×</a>
@@ -125,7 +127,7 @@ class Form_4 {
             that.form_dom.querySelector("#save").onclick = function () {
                 if (that.save()) {
                     that.form_dom.innerHTML = " "
-                    that.html = 
+                    that.html =
                     `
                         <div id="mask">
                             <a class="close" href="#">×</a>
@@ -136,7 +138,7 @@ class Form_4 {
             }
             that.form_dom.querySelector("#cancel").onclick = function () {
                 that.form_dom.innerHTML = " "
-                that.html = 
+                that.html =
                 `
                     <div id="mask">
                         <a class="close" href="#">×</a>
@@ -154,6 +156,7 @@ class Form_4 {
         for (let i = 0; i < check.length; i++) {
             if (this[this.th[i]]) {
                 if (this[this.th[i]].func(check[i].value)) {
+                    console.log(check[i].value)
                     td += `<td>${check[i].value}</td>`
                     // this.form_dom.querySelectorAll("p")[i].innerText = this[this.th[i]].false
                 }
