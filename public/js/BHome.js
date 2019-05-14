@@ -1,16 +1,19 @@
-
+//获取左边div
 let oBleft=$('#B-left');
+//获取右边div
 let oBRight=$('#B-right');
-let oBleftName=$('#B-name');
+//获取左边标题
+let oBName=$('#B-name');
+//获取内容显示区
 let oBBoss=$('#B-boss');
+//获取右侧顶部区域
 let oBRightLogo=$('#B-right-logo');
-
 //当页面加载时获取可视区高度
-window.onload= Bwidth;
+window.onload= BDivWidth;
 //当页面缩放时
-window.onresize=Bwidth;
-
-function Bwidth() {
+window.onresize=BDivWidth;
+//左右显示框长宽显示函数
+function BDivWidth() {
     let oLookW = $(window).width();
     let oLookH = $(window).height();
     let oBExitH=oBRightLogo.outerHeight();
