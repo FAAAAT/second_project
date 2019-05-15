@@ -32,7 +32,7 @@
 #el-picturebox{
     width: 100%;
     font-size: 16px;
-    padding: 30px 15px 0 15px;
+    padding: 15px 15px 0 15px;
 }
 
 /* .el-list{
@@ -266,5 +266,71 @@
 .GQL-Elastic-box5 {
     margin-top: 220px;
     margin-right: 9px;
+}
+
+/* ------视频播放---------- */
+#el-videobox {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    display: none;
+}
+
+#el-videobox .el-v {
+    position: absolute;
+    margin: auto;  
+    width:100%;    
+    height: 600px;    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 600px;
+
+}
+#el-videobox  video{
+    margin-top: 5%;
+    max-height: 86%;
+    position: relative;
+    
+}
+
+#el-videobox span{
+    width: 30px;
+    height: 30px;
+    /* padding:10px;  */
+    position: absolute;
+    right: 60px;
+    top:60px;
+    color: rgb(255, 255, 255);
+    border:2px solid rgb(209, 209, 209);
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#el-videobox #el-picon{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100007;
+    font-size: 60px;
+    border:none;
+    display: none;
+    color: #dddddd;
+    font-weight: bold;
 }
 

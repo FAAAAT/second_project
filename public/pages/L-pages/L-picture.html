@@ -47,7 +47,7 @@
 
                             <!-- 下拉功能 -->
                             <div class="el-downbox">
-                                <button class="el-downbtn iconfont2" >&#xe619;</button>
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
                                 <div class="el-downlist ">
                                     <ul>
                                         <li data-toggle="modal" data-target="#exampleModal"
@@ -258,8 +258,8 @@
                     <div class="el-pictures clearfix el-imgbox_2">
                         <!-- 1 -->
                         <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x1.jpg" alt="">
+                            <div class="el-img el-showvide">
+                                <img src="../../images/L-imgs/fm.png" alt="">
                                 <span class="el-nub iconfont2">&#xe768;</span>
                             </div>
                             <p>美好的春游</p>
@@ -278,10 +278,11 @@
                             </div>
                         </div>
 
+                        
                         <!-- 2 -->
                         <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x2.jpg" alt="">
+                            <div class="el-img el-showvide">
+                                <img src="../../images/L-imgs/fm.png" alt="">
                                 <span class="el-nub iconfont2">&#xe768;</span>
                             </div>
                             <p>美好的春游</p>
@@ -302,8 +303,8 @@
 
                         <!-- 3-->
                         <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
+                            <div class="el-img el-showvide">
+                                <img src="../../images/L-imgs/fm.png" alt="">
                                 <span class="el-nub iconfont2">&#xe768;</span>
                             </div>
                             <p>美好的春游</p>
@@ -322,72 +323,6 @@
                             </div>
                         </div>
 
-                        <!-- 4-->
-                        <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x4.jpg" alt="">
-                                <span class="el-nub iconfont2">&#xe768;</span>
-                            </div>
-                            <p>美好的春游</p>
-
-                            <!-- 下拉功能 -->
-                            <div class="el-downbox">
-                                <button class="el-downbtn iconfont2">&#xe619;</button>
-                                <div class="el-downlist ">
-                                    <ul>
-                                        <li data-toggle="modal" data-target="#exampleModal"
-                                            data-whatever="@getbootstrap" class="el-wr">编辑
-                                        </li>
-                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 5 -->
-                        <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x5.jpg" alt="">
-                                <span class="el-nub iconfont2">&#xe768;</span>
-                            </div>
-                            <p>美好的春游</p>
-
-                            <!-- 下拉功能 -->
-                            <div class="el-downbox">
-                                <button class="el-downbtn iconfont2">&#xe619;</button>
-                                <div class="el-downlist ">
-                                    <ul>
-                                        <li data-toggle="modal" data-target="#exampleModal"
-                                            data-whatever="@getbootstrap" class="el-wr">编辑
-                                        </li>
-                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- 6 -->
-                        <div class="el-pisingle el-clone">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x6.jpg" alt="">
-                                <span class="el-nub iconfont2">&#xe768;</span>
-                            </div>
-                            <p>美好的春游</p>
-
-                            <!-- 下拉功能 -->
-                            <div class="el-downbox">
-                                <button class="el-downbtn iconfont2">&#xe619;</button>
-                                <div class="el-downlist ">
-                                    <ul>
-                                        <li data-toggle="modal" data-target="#exampleModal"
-                                            data-whatever="@getbootstrap" class="el-wr">编辑
-                                        </li>
-                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
                         <!-- 旧的视频 -->
                         <!-- <div class="el-pisingle">
@@ -404,7 +339,7 @@
         </div>
     </div>
 
-   
+
 
     <!-- ---------编辑相册弹框------ -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -493,8 +428,19 @@
     </div> -->
 
     <!-- 新建单个相册html模板 -->
-    <!-- 弹出视频模板 -->
-    
+    <!-- ---------弹出视频模板 -------------->
+    <div id="el-videobox">
+        <div class="el-v">
+                <video id="el_video_1"  loop controls>
+                    <source src="../../images/L-Video/b3e4ebc18ff411b291ddf53a702b8cf5.mp4"
+                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    <source src="" type='video/webm; codecs="vp8, vorbis"' />
+                    <source src="" type='video/ogg; codecs="theora, vorbis"' />
+                </video>
+            <span class="iconfont2" id="el-picon">&#xe768;</span>
+        </div>
+        <span id="el-x">x</span>
+    </div>
 
     <script src="../../util/jquery-3.4.0.js"></script>
     <script src="../../js/Bootstrap.js"></script>
