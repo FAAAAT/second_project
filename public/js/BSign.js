@@ -31,7 +31,7 @@ let oBTop=$('#B-top');
 //获取弹框的内容
 let oBContent=$('#B-content');
 // 判断输入是否正确
-let oYesOrNo=true;
+let oYesOrNo=false;
 //当用户名框失去焦点时
 oUser.blur(function(){
    //获取用户名框的内容
