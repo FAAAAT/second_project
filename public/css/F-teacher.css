@@ -37,10 +37,9 @@
         }
 
         .F-content {
-            width: 90%;
+            width: 100%;
             height: 700px;
             background: white;
-            box-shadow: 1px 1px 5px #999;
             margin: 10px auto;
             text-align: center;
             position: relative;
@@ -56,10 +55,10 @@
         }
 
         .layui-table {
-            width: 90%;
+            width: 100%;
             position: absolute;
             top: 50px;
-            left: 5%;
+            left: 0;
         }
 
         .layui-table th {

@@ -17,156 +17,143 @@
 </head>
 
 <body>
-    <div class="layui-fluid">
-        <div class="layui-row">
-            <div class="layui-col-md12">
-                <div class="F-logo">
-                    <img src="../images/logo.png" alt="">
-                    <div class="F-ld">
-                        <img src="../images/ld.png" alt="">
-                        <span>退出登录></span>
-                    </div>
+        <div class="F-content">
+        <div class="F-head">
+                <div class="F-name">
+                    <span>搜索:</span>
+                    <input type="text" name="title" required lay-verify="required" placeholder="查询"
+                        autocomplete="off" class="layui-input" id="input1">
                 </div>
-                <div class="F-content">
-                    <div class="F-head">
-                        <div class="F-name">
-                            <span>搜索:</span>
-                            <input type="text" name="title" required lay-verify="required" placeholder="查询"
-                                autocomplete="off" class="layui-input" id="input1">
-                        </div>
-                        <button class="layui-btn" id="check">查询</button>
-                        <button class="layui-btn" id='F-add'>添加用户</button>
-                    </div>
-                    <table class="layui-table" lay-skin="line">
-                        <colgroup>
-                            <col width="150">
-                            <col width="200">
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>序号</th>
-                                <th>班级</th>
-                                <th>教师姓名</th>
-                                <th>性别</th>
-                                <th>编号</th>
-                                <th>创建人</th>
-                                <th>创建日期</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2018</td>
-                                <td>小红</td>
-                                <td>女</td>
-                                <td>20190001</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2017</td>
-                                <td>小刚</td>
-                                <td>男</td>
-                                <td>20190002</td>
-                                <td>admin</td>
-                                <td>2018/05/05</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>2015</td>
-                                <td>小王</td>
-                                <td>男</td>
-                                <td>20190002</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>2014</td>
-                                <td>小李</td>
-                                <td>男</td>
-                                <td>20190001</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>2019</td>
-                                <td>小张</td>
-                                <td>男</td>
-                                <td>20190003</td>
-                                <td>admin</td>
-                                <td>2019/05/05</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>2019</td>
-                                <td>小飞</td>
-                                <td>女</td>
-                                <td>20190009</td>
-                                <td>admin</td>
-                                <td>2019/04/12</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>女</td>
-                                <td>20190007</td>
-                                <td>admin</td>
-                                <td>2019/02/22</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>2019</td>
-                                <td>小明</td>
-                                <td>男</td>
-                                <td>20190008</td>
-                                <td>admin</td>
-                                <td>2019/05/11</td>
-                                <td>
-                                    <i class="layui-icon layui-icon-edit"></i>
-                                    <i class="layui-icon layui-icon-delete"></i>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div id="test1"></div>
-                </div>
+                <button class="layui-btn" id="check">查询</button>
+                <button class="layui-btn" id='F-add'>添加用户</button>
             </div>
+            <table class="layui-table" lay-skin="line">
+                <colgroup>
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>班级</th>
+                        <th>教师姓名</th>
+                        <th>性别</th>
+                        <th>编号</th>
+                        <th>创建人</th>
+                        <th>创建日期</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2018</td>
+                        <td>小红</td>
+                        <td>女</td>
+                        <td>20190001</td>
+                        <td>admin</td>
+                        <td>2019-05-05</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2017</td>
+                        <td>小刚</td>
+                        <td>男</td>
+                        <td>20190002</td>
+                        <td>admin</td>
+                        <td>2018-05-05</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2015</td>
+                        <td>小王</td>
+                        <td>男</td>
+                        <td>20190002</td>
+                        <td>admin</td>
+                        <td>2019-05-05</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2014</td>
+                        <td>小李</td>
+                        <td>男</td>
+                        <td>20190001</td>
+                        <td>admin</td>
+                        <td>2019-05-05</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2019</td>
+                        <td>小张</td>
+                        <td>男</td>
+                        <td>20190003</td>
+                        <td>admin</td>
+                        <td>2019-05-05</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>2019</td>
+                        <td>小飞</td>
+                        <td>女</td>
+                        <td>20190009</td>
+                        <td>admin</td>
+                        <td>2019-04-12</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>2019</td>
+                        <td>小明</td>
+                        <td>女</td>
+                        <td>20190007</td>
+                        <td>admin</td>
+                        <td>2019-02-22</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>2019</td>
+                        <td>小明</td>
+                        <td>男</td>
+                        <td>20190008</td>
+                        <td>admin</td>
+                        <td>2019-05-11</td>
+                        <td>
+                            <i class="layui-icon layui-icon-edit"></i>
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="test1"></div>
         </div>
-    </div>
 </body>
 <script>
     // let oIpt1 = document.getElementById('input1');
