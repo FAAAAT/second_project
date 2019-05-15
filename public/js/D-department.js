@@ -68,6 +68,22 @@ var table = [{
     position:'主任',
     tel:'17711068954',
     time:'2018-05-08',
+},{
+    department:'保卫',
+    name:'九一',
+    sex:'男',
+    age:40,
+    position:'门卫',
+    tel:'17711062222',
+    time:'2018-05-08',
+},{
+    department:'宣传',
+    name:'鲜华',
+    sex:'女',
+    age:26,
+    position:'主任',
+    tel:'17711012345',
+    time:'2018-05-08',
 }];
 
 var D_table = $('.D-table');
@@ -133,7 +149,7 @@ class Form_4 {
                     that.html +=
                         `
                         <div>
-                            <span>${that.th[i]}<p></p></span><input type="text" value="${that.content_text[i]}">
+                            <span>${that.th[i]}</span><input type="text" value="${that.content_text[i]}"><p></p>
                         </div>
                     `
                 }
@@ -215,7 +231,7 @@ class Form_4 {
                 that.html +=
                     `
                     <div>
-                        <span>${that.th[i]}<p></p></span><input type="text" value="">
+                        <span>${that.th[i]}</span><input type="text" class="D-oIput" value=""><p></p>
                     </div>
                 `
             }
@@ -340,101 +356,112 @@ new Form_4(".D-table").addnew("#test").addcheck({
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var department =/^[\u4e00-\u9fa5]{2,6}$/ ;
+                    if(department.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "列如：宣传部",
         },
+// var reg = {
+//     department:/^[\u4e00-\u9fa5]{2,6}$/,
+//     name:/^[\u4e00-\u9fa5]{2,6}$/,
+//     sex:/^\d{1,2}$/,
+//     age:/^\d{2}$/,
+//     tel:/^1[3-9]\d{9}$/,
+// } ;
 
     "姓名":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
+                    var department =/^[\u4e00-\u9fa5]{2,8}$/ ;
+                    if(department.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
-                else {
-                    return false
-                }
+                
             },
             ok: "ok",
-            false: "不为空",
+            false: "列如：张三",
         },
 
     "性别":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var sex =/^[\u4e00-\u9fa5]{1}$/ ;
+                    if(sex.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "输入不合法",
         },
     "年龄":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var age =/^\d{1,2}$/;
+                    if(age.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "请输入输入数字",
         },
     "职位":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var department =/^[\u4e00-\u9fa5]{2,6}$/;
+                    if(department.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "输入不合法",
         },
     "联系电话":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var department =/^1[3-9]\d{9}$/;
+                    if(department.test(str)){
+                        return true;
+                    };
+                    return false;
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "例如：13000000000",
         },
     "创建时间":
         {
             func:function (str) {
                 if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
+                    var time = /^\d$/;
+                    
+                    if(time.test(str)){
+                        return true
+                    }else{
+                        return false
+                    }
                 }
             },
             ok: "ok",
-            false: "不为空",
+            false: "列如：2018-05-09",
         },
 }).search(".input",".check");
 
-// var reg = {
-//     department:/^[\u4e00-\u9fa5]{2,6}$/,
-//     name:/^[\u4e00-\u9fa5]{2,6}$/,
-//     sex:/^[\u4e00-\u9fa5]$/,
-//     age:/^\d{2}$/,
-//     tel:/^1[3-9]\d{9}$/,
-// } ;
+

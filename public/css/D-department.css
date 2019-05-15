@@ -20,8 +20,9 @@
     margin-left: 10px;
 }
 .D-box-right{
+    width: 100%;
     height: 600px;
-    background: #ebeef1;
+    background: white;
 }
 .D-imgFloat{
     float: left;
@@ -37,6 +38,7 @@
 }
 .D-iframe{
     color: #0C0C0C;
+    text-align: center
 }
 /*#D-iframe{*/
     /*width: 100%;*/
@@ -79,6 +81,14 @@ h4{
 .D-test1{
     position: absolute;
     bottom: 6%;
+    left: 35%;
+}
+#D-bo{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 6%;
+    text-align: center
 }
 .D-elastic{
     position:absolute;
@@ -117,6 +127,7 @@ h4{
 }
 .D-form{
     margin-left: 20%;
+
     /*text-align: center;*/
 }
 .D-form-btn{
@@ -165,7 +176,7 @@ h4{
 }
 
 #mask{
-    width:350px;
+    width:35%;
     height: 500px;
     border: 1px solid gray;
     background: white;
