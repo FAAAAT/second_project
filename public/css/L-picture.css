@@ -32,6 +32,7 @@
 #el-picturebox{
     width: 100%;
     font-size: 16px;
+    padding: 30px 15px 0 15px;
 }
 
 /* .el-list{
@@ -80,12 +81,11 @@
 }
 
 .el-pictures{
-    padding: 25px 0;
+    padding: 10px 0;
 }
 
 .el-pictures .el-pisingle{
-    width: 208px;
-    height: 239px;
+    width: 190px;
     padding: 10px ;
     background-color: #ebebeb;
     float: left;
@@ -97,7 +97,7 @@
 
 .el-pictures .el-pisingle .el-img{
     width: 100%;
-    height: 186px;
+    height: 165px;
     overflow: hidden;
     position:relative;
 }
@@ -157,6 +157,7 @@
     background-color: #fff;
     padding: 8px 30px;
     color: #575757;
+    cursor: pointer;
 }
 .el-downbox .el-downlist li:hover{
     background-color: #f8f7f7;
@@ -173,18 +174,6 @@
    z-index: 300;
    display: none;
 }
-
-
-
-
-/* 分页 */
-#el-navpage{
-  position: absolute;
-  left: 0;
-  z-index: 9999;
-}
-
-
 
 
 

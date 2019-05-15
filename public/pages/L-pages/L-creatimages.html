@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>picture</title>
     <style>
-       h3{
-           width: 300px;
-           height: 100px;
-           text-align: center;
-           position: absolute;
-           margin: auto;
-           top: 0;
-           bottom: 0;
-           left: 0;
-           right: 0; 
-           color: rgb(119, 119, 119);
-       }
+        h3 {
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: rgb(119, 119, 119);
+        }
+        
+        #el-back button{
+          /* width: 100%; */
+          position: absolute;
+          /* top: 45px;
+          right: 100px; */
+          right:100px;
+          top: 45px;
+        }
+        #el-back button{
+            padding: 10px 15px;
+            border-radius:6px;
+            background-color:#fff;;
+            border: 1px solid #b6b6b6;
+           
+        }
+        #el-back a{
+            display: inline-block;
+            color: #365c55;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            text-decoration: none
+        }
+        #el-back a:hover{
+          color: #000000;
+        }
     </style>
 </head>
+
 <body>
-    <h3 >您暂时还没有照片~~~</h3>
+    <h3>您暂时还没有照片~~~</h3>
+    <div class="clearfix" id="el-back">
+        <button class="el-lib pull-right" id="el-back">
+            <a href="../L-pages/L-picture.html">返回首页</a>
+        </button>
+    </div>
 </body>
+
 </html>
