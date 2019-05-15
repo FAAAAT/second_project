@@ -1,206 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>picture</title>
+    <link rel="stylesheet" href="../../util/veiwer/viewer.css">
     <link rel="stylesheet" href="../../css/Bootstrap.css">
-    <link rel="stylesheet" href="../../css/L-picture.css">
     <link rel="stylesheet" href="../../css/L-picturedescrip.css">
 </head>
+
 <body>
-   <div id="el-picturedescripbox">
-       <!-- 头部 -->
-       <div class="el-headp clearfix">
+    <div id="el-picturedescripbox">
+        <!-- 弹出下拉功能框 -->
+        <div id="el-tangbox">
+            <div class="container clearfix">
+                <div class="el-left pull-left">
+                    <input type="checkbox" name="" class="el-checkall">
+                    全选
+                </div>
+                <input type="button" value="删除" class="btn btn-primary" class="el-cancel pull-left" id="el-cancel">
+                <a class="pull-right " id="el-argan">完成管理</a>
+            </div>
+        </div>
+        <!-- 头部 -->
+        <div class="el-headp clearfix">
             <div class="el-headimg pull-left">
                 <img src="../../images/L-imgs/x3.jpg" alt="">
             </div>
-             <div class="el-text pull-left">
-                 <p>活动 <span>32张</span> </p>
-                 <ul class="clearfix"> 
-                     <li ><button >上传照片视频</button></li>
-                     <li ><button class="el-lib">批量管理</button></li>
-                     <li><button class="el-lib">更多</button></li>
-                 </ul>
-             </div>
-       </div>
-       <!-- 主体img -->
-       <div class="el-bodyimg clearfix ">
-           <!-- 1 -->
-           <div class="el-imgonebox">
-               <div class="el-i ">
-                   <img src="../../images/L-imgs/x2.jpg" alt="">
-               </div>
-              <p>2017-03-06</p>
-           </div>
-  
-           <!-- 2 -->
-           <div class="el-imgonebox">
-                <div class="el-i">
-                    <img src="../../images/L-imgs/x4.jpg" alt="">
+            <div class="el-text pull-left">
+                <p>活动 <span>32张</span></p>
+                <ul class="clearfix">
+                    <li class="file-box"><input class="file-btn" type="file" id="file-btn">上传照片</li>
+                    <!-- <li><button class="el-lib " id="el-lis">确定上传</button></li> -->
+                    <!-- <li  id="el-sg"><img src="../../images/L-imgs/x2.jpg" alt="" id="el-sg"></li> -->
+                    <li><button class="el-lib " id="el-lib">批量管理</button></li>
+                   
+                </ul>
+            </div>
+            <li><button class="el-lib pull-right" id="el-back"><a href="../L-pages/L-picture.html">返回首页</a></button></li>
+        </div>
+        <!-- 主体img -->
+        <div class="el-bodyimg clearfix " id="el-im_1">
+            <!-- 1 -->
+            <div class="el-imgonebox">
+                <div class="el-i ">
+                    <img src="../../images/L-imgs/x2.jpg" data-original="../../images/L-imgs/x2.jpg" alt="">
+                    <span class="el-cal iconfont2 " data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2012-08-06</p>
+                <input type="checkbox" class="el-chekb">
+            </div>
+
+            <!-- 2 -->
+            <div class="el-imgonebox">
+                <div class="el-i">
+                    <img src="../../images/L-imgs/x1.jpg" data-original="../../images/L-imgs/x1.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
+                </div>
+                <p>2012-08-23</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
             <!-- 3 -->
-           <div class="el-imgonebox">
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x3.jpg" alt="">
+                    <img src="../../images/L-imgs/x8.jpg" data-original="../../images/L-imgs/x8.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>20012-08-24</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-             <!-- 4 -->
-           <div class="el-imgonebox">
+            <!-- 4 -->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x2.jpg" alt="">
+                    <img src="../../images/L-imgs/x6.jpg" data-original="../../images/L-imgs/x6.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2013-08-04</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-              <!-- 5-->
-           <div class="el-imgonebox">
+
+            <!-- 5 -->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x3.jpg" alt="">
+                    <img src="../../images/L-imgs/x5.jpg" data-original="../../images/L-imgs/x5.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2014-01-02</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-
-              <!-- 6 -->
-           <div class="el-imgonebox">
+            <!-- 6 -->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x4.jpg" alt="">
+                    <img src="../../images/L-imgs/x2.jpg" data-original="../../images/L-imgs/x2.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2014-06-23</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-               <!-- 7 -->
-           <div class="el-imgonebox">
+
+            <!-- 7 -->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x3.jpg" alt="">
+                    <img src="../../images/L-imgs/x1.jpg" data-original="../../images/L-imgs/x1.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2015-07-23</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-               <!-- 8 -->
-           <div class="el-imgonebox">
+            <!-- 8 -->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x4.jpg" alt="">
+                    <img src="../../images/L-imgs/x5.jpg" data-original="../../images/L-imgs/x5.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2015-04-23</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
-                 <!-- 9 -->
-           <div class="el-imgonebox">
+            <!--  9-->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x1.jpg" alt="">
+                    <img src="../../images/L-imgs/x2.jpg" data-original="../../images/L-imgs/x2.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2016-08-21</p>
+                <input type="checkbox" class="el-chekb">
             </div>
-                 <!-- 10 -->
-           <div class="el-imgonebox">
+
+            <!--  10-->
+            <div class="el-imgonebox">
                 <div class="el-i">
-                    <img src="../../images/L-imgs/x2.jpg" alt="">
+                    <img src="../../images/L-imgs/x8.jpg" data-original="../../images/L-imgs/x8.jpg" alt="">
+                    <span class="el-cal iconfont2" data-toggle="modal" data-target=".bs-example-modal-sm">&#xe6be;</span>
                 </div>
-               <p>2017-08-23</p>
+                <p>2016-12-03</p>
+                <input type="checkbox" class="el-chekb">
             </div>
 
 
-           <!-- 11 -->
-           <div class="el-imgonebox">
-                <div class="el-i ">
-                    <img src="../../images/L-imgs/x2.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+    <!---- 确定删除相册弹框 ----->
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">确定删除照片</h4>
                 </div>
-               <p>2017-03-06</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="el-cancel2">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!--创建图片 -->
+    <div class="el-imgonebox" id="el-ingclone" style="display:none">
+        <div class="el-i">
+            <img src="../../images/L-imgs/x3.jpg" data-original="" alt="">
+            <span class="el-cal" data-toggle="modal" data-target=".bs-example-modal-sm">18</span>
+        </div>
+        <p>2017-08-23</p>
+        <input type="checkbox" class="el-chekb">
+    </div>   
+ 
+
+
+    <script src="../../util/veiwer/jquery-3.3.1.js"></script>
+    <script src="../../js/Bootstrap.js"></script>
+    <script src="../../util/veiwer/viewer.js"></script>
+    <script src="../../js/L-picturedescrip.js"></script>
+    <script>
+
+
    
-            <!-- 12-->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x4.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-             <!-- 13-->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x3.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-              <!-- 14 -->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x2.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-               <!-- 15-->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x3.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
- 
-               <!-- 16 -->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x4.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-                <!-- 17 -->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x3.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-                <!-- 18-->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x4.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
- 
-                  <!-- 19 -->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x1.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
-                  <!-- 20 -->
-            <div class="el-imgonebox">
-                 <div class="el-i">
-                     <img src="../../images/L-imgs/x2.jpg" alt="">
-                 </div>
-                <p>2017-08-23</p>
-             </div>
-               <!-- 21-->
-            <div class="el-imgonebox">
-                    <div class="el-i">
-                        <img src="../../images/L-imgs/x2.jpg" alt="">
-                    </div>
-                   <p>2017-08-23</p>
-                </div>  
-       </div>
 
-   </div>
-
-   <script src="../../util/jquery-3.4.0.js"></script>
-   <script src="../../js/Bootstrap.js"></script>
-   <script src="../../js/L-picturedescrip.js"></script>
-
+    </script>
 </body>
+
 </html>
