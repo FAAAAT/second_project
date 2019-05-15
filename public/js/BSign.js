@@ -30,6 +30,8 @@ let oBOk=$('#ok');
 let oBTop=$('#B-top');
 //获取弹框的内容
 let oBContent=$('#B-content');
+// 判断输入是否正确
+let oYesOrNo=true;
 //当用户名框失去焦点时
 oUser.blur(function(){
    //获取用户名框的内容
@@ -39,15 +41,18 @@ oUser.blur(function(){
       oNo.css('display','block');
       oYes.css('display','none');
       oBUserCon.text('*该项不能为空');
+       oYesOrNo=false;
    }else if (oReg.test(oUserVal)){
        //不为空的时候判断用户名格式是否正确
        oNo.css('display','none');
        oYes.css('display','block');
        oBUserCon.text('');
+       oYesOrNo=true;
    }else  {
        oNo.css('display','block');
        oYes.css('display','none');
        oBUserCon.text('*请输入正确的用户类型及编码');
+       oYesOrNo=false;
    }
 
    });
@@ -60,22 +65,28 @@ oPass.blur(function(){
         oNo1.css('display','block');
         oYes1.css('display','none');
         oBPassCon.text('*该项不能为空');
+        oYesOrNo=false;
     }else if (oRegPass.test(oPassVal)){
         //不为空的时候判断密码格式是否正确
         oNo1.css('display','none');
         oYes1.css('display','block');
         oBPassCon.text('');
+        oYesOrNo=true;
     }else  {
         oNo1.css('display','block');
         oYes1.css('display','none');
         oBPassCon.text('*密码应当包含6位数字');
+        oYesOrNo=false;
     }
 });
 //用于判断用户输入密码错误次数
 let n=0;
 //当登录按钮被点击
 oBtn.click(function () {
-    oDian();
+    if (oYesOrNo) {
+        oDian();
+    }
+    return;
 });
 //点击登录按钮时调用的函数
 function oDian(){

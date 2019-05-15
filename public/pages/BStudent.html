@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>学生管理</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/Bootstrap.css">
+
     <link rel="stylesheet" href="../util/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/Bootstrap.css">
     <link rel="stylesheet" href="../font/B/iconfont.css">
     <script src="../util/jquery-3.4.0.js"></script>
     <script src="../js/Bootstrap.js"></script>
@@ -13,130 +14,124 @@
     <link rel="stylesheet" href="../css/BStudent.css">
 </head>
 <body>
+    <!--展示信息-->
     <div class="container-fluid" id="B-box">
+        <!--搜索框和添加编辑按钮-->
         <div class=" row clearfix" id="B-seo" >
+            <!--搜索框-->
             <div id="B-class" class="clearfix col-sm-3 col-xs-12">
-                <p class="s1">班级名称：</p>
+                <p class="s1">学生姓名：</p>
                 <input  type="text" class="form-control">
             </div>
             <div id="B-class-boss" class="clearfix col-sm-3 col-xs-12">
-                <p>班主任：</p>
+                <p>学号：</p>
                 <input  type="text" class="form-control">
             </div>
+            <!--查询和添加按钮-->
             <div id="B-button"class="col-sm-offset-2 col-sm-4 col-xs-12">
-                <button  class="layui-btn btn">查询</button>
-                <button class="layui-btn btn">
+                <button  class=" btn1">查询</button>
+                <button class=" btn1">
                     <i class="layui-icon">&#xe608;</i> 添加
                 </button>
             </div>
         </div>
+        <!--表格数据-->
         <div id="B-content">
+            <!--表头-->
             <table class="layui-table" lay-skin="line" id="tab">
                 <thead class="head">
-                <tr id="B-head">
-                    <th>班级名称</th>
-                    <th>教室</th>
-                    <th>开班日期</th>
-                    <th>学生人数</th>
-                    <th>班主任</th>
-                    <th>状态</th>
-                    <th>创建人</th>
-                    <th>创建日期</th>
-                    <th>操作</th>
-                </tr>
+                    <tr id="B-head">
+                        <th>班级名称</th>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>入学日期</th>
+                        <th>班主任</th>
+                        <th>就读状态</th>
+                        <th>紧急联系人</th>
+                        <th>联系电话</th>
+                        <th>操作</th>
+                    </tr>
                 </thead>
+                <!--表格内容-->
                 <tbody id="mapAddress">
-                <tr>
-                    <td>小班</td>
-                    <td>一教101</td>
-                    <td>2019-09-1</td>
-                    <td class="aaa">30</td>
-                    <td>吴彦祖</td>
-                    <td>
-                        <select class="sel">
-                            <option>小班</option>
-                            <option>中班</option>
-                            <option>大班</option>
-                        </select>
-                    </td>
-                    <td>
-                        admin
-                    </td>
-                    <td>
-                        2019-10-10
-                    </td>
-                    <td>
-                        <button class="layui-btn layui-btn-sm edio">
-                            <i class="layui-icon sm1">&#xe642;</i>
-                        </button>
-                        <button class="layui-btn layui-btn-sm del">
-                            <i class="layui-icon sm1">&#xe640;</i>
-                        </button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>向日葵小班</td>
+                        <td>张甜甜</td>
+                        <td>001</td>
+                        <td>2019-05-14</td>
+                        <td>田媛媛</td>
+                        <td>在读</td>
+                        <td>未知</td>
+                        <td>18109090040</td>
+                        <td>
+                            <span class="layui-icon sm1">&#xe642;</span>
+                            <span class="layui-icon sm1">&#xe640;</span>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-    </div>
+        <!--分页显示状态栏-->
+        <div id="test1"></div>
 
-    <!--弹框-->
-    <div class="all">
-        <div id="mask">
-            <a class="close" href="javasript:;">×</a>
-            <div>
-                <span>班级名称：<p>*</p></span><input type="text" placeholder="小班">
+    </div>
+    <!--提醒弹框-->
+    <div class="container-fluid">
+        <div class="B-mask row">
+            <div id="B-mask-content" class="B-remind-mask col-xs-offset-4 col-xs-4">
+                <div id="B-news" class="B-remind-head">弹框提醒</div>
+                <div id="B-news-content">确定使用这个弹框？ <br> 文字填充</div>
+                <div id="B-news-button" class="B-remind-button">
+                    <button class="btn1" id="B-news-button-no">取消</button>
+                    <button class="btn1" id="B-news-button-yes">确定</button>
+                </div>
             </div>
-            <div>
-                <span>教室：<p>*</p></span><input type="text" placeholder="一教101">
-            </div>
-            <div>
-                <span>开班日期：</span><input type="text" placeholder="2019-5-15">
-            </div>
-            <div>
-                <span>学生人数：<p>*</p></span><input type="text" placeholder="请输入学生人数">
-            </div>
-            <div>
-                <span>班主任：<p>*</p></span><input type="text" placeholder="请输入班主任姓名">
-            </div>
-            <div>
-                <span>状态：</span><input type="text" placeholder="大班">
-            </div>
-            <div>
-                <span>创建人：</span><input type="text" value="admin">
-            </div>
-            <div>
-                <span>创建日期：</span><input type="text" placeholder="2019-5-15">
-            </div>
-            <button id="save">保存</button>
-            <button id="cancel">取消</button>
         </div>
     </div>
+    <!--查询或者编辑弹框-->
+    <div class="container-fluid">
+        <div class="B-mask row" style="display: block">
+            <div class="col-xs-6 col-xs-offset-3 B-remind-mask">
+                <div id="B-edit-head" class="B-remind-head" >弹框提醒</div>
+                <div id="B-edit-body" class="clearfix">
+                    <!--展示的信息框-->
+                   <ul id="B-edit-left">
+                       <li>班级名称：<input type="text" class="form-control">ddddd</li>
+                       <li>姓名：<input type="text" class="form-control"></li>
+                       <li>年龄：<input type="text" class="form-control"></li>
+                       <li>学号：<input type="text" class="form-control"></li>
+                       <li>紧急联系人：<input type="text" class="form-control"></li>
+                   </ul>
+                    <ul>
+                        <li>班主任：<input type="text" class="form-control"></li>
+                        <li>性别：<input type="text" class="form-control"></li>
+                        <li>入学时间：<input type="text" class="form-control"></li>
+                        <li>就读状态：<input type="text" class="form-control"></li>
+                        <li>联系电话：<input type="text" class="form-control"></li>
+                    </ul>
+                </div>
+                <div id="B-edit-button" class="B-remind-button">
+                    <button class="btn1" id="B-edit-button-no">取消</button>
+                    <button class="btn1" id="B-edit-button-yes">确定</button>
+                </div>
+            </div>
 
-    <!--保存成功弹框提示-->
-    <div class="keep">
-        <div class="top">
-            <span class="prompt">保存提示</span>
-            <a class="no" href="javascript:;">×</a>
         </div>
-        <div class="buttom">
-            <p class="p1">保存成功！</p>
-            <div class="sure">取消</div>
-            <div class="yes">确定</div>
-        </div>
-    </div>
-    <!--删除小弹框提示-->
-    <div class="mask">
-        <a class="no" href="javascript:;">×</a>
-        <div class="top">
-            <span class="prompt">删除提示</span>
-        </div>
-        <div class="buttom">
-            <p id="p1">确定要删除这项内容吗？</p>
-            <div id="sure">取消</div>
-            <div id="no" id="close">确定</div>
-        </div>
+
     </div>
 
 </body>
+<script>
+    // 分页框
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+        });
+    });
+</script>
 <script src="../js/BStudent.js"></script>
 </html>

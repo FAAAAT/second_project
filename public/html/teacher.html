@@ -11,159 +11,15 @@
     <link rel="stylesheet" href="../font/font_1184970_a7hlu57e737/iconfont.css">
     <script src="../util/layui/layui.js"></script>
     <script src="../util/jquery-3.4.0.js"></script>
-    <style>
-        @font-face {
-            font-family: 'iconfont';
-            src: url('iconfont.eot');
-            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
-                url('iconfont.woff') format('woff'),
-                url('iconfont.ttf') format('truetype'),
-                url('iconfont.svg#iconfont') format('svg');
-        }
-
-        .iconfont {
-            font-family: "iconfont" !important;
-            font-size: 16px;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke-width: 0.2px;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .layui-col-md3 {
-            height: 700px;
-            background: skyblue;
-        }
-
-        .layui-col-md9 {
-            height: 700px;
-            background: #eee;
-        }
-
-        .F-logo {
-            width: 90%;
-            margin: 20px auto 0;
-        }
-
-        .F-ld {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .F-ld span {
-            vertical-align: bottom;
-        }
-
-        .F-content {
-            width: 90%;
-            height: 600px;
-            background: white;
-            box-shadow: 1px 1px 5px #999;
-            margin: 10px auto;
-            text-align: center;
-            position: relative;
-            left: 0;
-            top: 0;
-        }
-
-        .F-head {
-            width: 100%;
-            position: absolute;
-            top: 10px;
-            left: 0;
-        }
-
-        .layui-table {
-            width: 90%;
-            position: absolute;
-            top: 50px;
-            left: 5%;
-        }
-
-        .layui-table th {
-            text-align: center;
-            background: #009688;
-            color: white;
-        }
-
-        #test1 {
-            width: 90%;
-            position: absolute;
-            top: 90%;
-            left: 0;
-        }
-
-        .F-name {
-            display: inline-block;
-        }
-
-        .layui-input {
-            width: 200px;
-            display: inline-block;
-        }
-
-        #mask {
-            width: 350px;
-            height: 400px;
-            border: 1px solid gray;
-            background: white;
-            border-radius: 10px;
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            margin-top: -250px;
-            margin-left: -175px;
-            padding-top: 30px;
-        }
-
-        #mask div {
-            margin-bottom: 20px;
-        }
-
-        #mask div span {
-            display: inline-block;
-            width: 100px;
-            height: 30px;
-            text-align: right;
-            padding-left: 5%;
-        }
-
-        #mask p {
-            display: inline-block;
-            color: red;
-        }
-
-        #save,
-        #cancel {
-            width: 60px;
-            height: 30px;
-            border: none;
-            color: white;
-        }
-
-        #save {
-            background: #009688;
-            margin-left: 110px;
-            margin-right: 20px;
-        }
-
-        #cancel {
-            background: #bea47a;
-        }
-
-        .close {
-            position: absolute;
-            top: 3px;
-            right: 4px;
-        }
-    </style>
+    <script src="../js/E-form.js" ></script>
+    <script src="../js/F-teacher.js" defer></script>
+    <link rel="stylesheet" href="../css/F-teacher.css">
 </head>
 
 <body>
     <div class="layui-fluid">
         <div class="layui-row">
-            <div class="layui-col-md3">1</div>
-            <div class="layui-col-md9">
+            <div class="layui-col-md12">
                 <div class="F-logo">
                     <img src="../images/logo.png" alt="">
                     <div class="F-ld">
@@ -313,120 +169,20 @@
     </div>
 </body>
 <script>
-    let oIpt1 = document.getElementById('input1');
-    let oIpt2 = document.getElementById('input2');
-    let oCheck = document.getElementById('check');
-    localStorage.setItem('2019','大明')
+    // let oIpt1 = document.getElementById('input1');
+    // let oIpt2 = document.getElementById('input2');
+    // let oCheck = document.getElementById('check');
+    // localStorage.setItem('2019','大明')
 
-    oCheck.onclick = function(){
-        let sName1 = oIpt1.value;
-        let sName2 = oIpt2.value;
+    // oCheck.onclick = function(){
+    //     let sName1 = oIpt1.value;
+    //     let sName2 = oIpt2.value;
 
-        if(localStorage.getItem(sName1||sName2)){
-             alert('查询成功')
-         }else{
-             alert('字段格式不正确')
-         }
-    };
-
-    layui.use('laypage', function () {
-        var laypage = layui.laypage;
-        //执行一个laypage实例
-        laypage.render({
-            elem: 'test1'
-            , count: 50
-        });
-    });
+    //     if(localStorage.getItem(sName1||sName2)){
+    //          alert('查询成功')
+    //      }else{
+    //          alert('字段格式不正确')
+    //      }
+    // };
 </script>
-<script src="../js/E-form.js"></script>
-<script>
-    let a = new Form_4(".layui-table").addnew("#F-add").addcheck({
-        "序号": {
-            func: function (str) {
-                if (str.trim()) {
-
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "班级": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "教师姓名": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "性别": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "编号": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "创建人": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-        "创建日期": {
-            func: function (str) {
-                if (str.trim()) {
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok: "ok",
-            false: "空字段"
-        },
-    }).search("#input1", "#check","green")
-</script>
-
 </html>

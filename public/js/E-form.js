@@ -104,7 +104,7 @@ class Form_4 {
             that.html =
             `
                 <div id="mask">
-                    <a class="close" href="#">×</a>
+                    <a class="close" href="#"></a>
                 <form action="#" id="form">
             `
             for (let i = 0; i < that.th.length - 1; i++) {
