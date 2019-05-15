@@ -1,7 +1,7 @@
 //存入登录数据
-let arr=[{name:'ad0001',pass:'000000',who:0},{name:'js0001',pass:'000000',who:1},{name:'jz0001',pass:'000000',who:2}];
+let arr=[{name:'ad001',pass:123456,who:0},{name:'js001',pass:123456,who:1},{name:'jz001',pass:123456,who:2}];
 //用户名正则
-const oReg=/^[a-z]{2}[0-9]{4}$/;
+const oReg=/^[a-z]{2}[0-9]{3}$/;
 //密码正则
 const oRegPass=/^[0-9]{6}$/;
 //获取用户名
@@ -75,40 +75,51 @@ oPass.blur(function(){
 let n=0;
 //当登录按钮被点击
 oBtn.click(function () {
+    oDian();
+});
+//点击登录按钮时调用的函数
+function oDian(){
     let oBUserVal=oUser.val();
     let oBPassVal=oPass.val();
+    console.log(oBUserVal,oBPassVal);
     n++;
-    for (let i=0;i<arr.length;i++){
+    for (var i=0;i<arr.length;i++){
         if (arr[i].name==oBUserVal) {
             if (arr[i].pass==oBPassVal) {
                 n=0;
                 window.location.href='public/pages/BHome.html?type='+arr[i].who;
+                return;
             }else {
                 oBMaskEnd.css('display','block');
                 if (n>=3){
                     oBTop.text('警告');
                     oBTop.css('color','red');
-                    oBContent.text('您已连续多次输入错误的账号和密码，为保护您的账号安全，系统将强制关闭!<br>忘记密码请联系系统管理员');
+                    oBContent.text('您已连续多次输入错误的账号或密码，为保护您的账号安全，系统将强制关闭!');
                     oBOk.click(function () {
-                       window.close();
+                        window.close();
                     });
+                    return;
                 }
-            }
-        }else {
-            oBMaskEnd.css('display','block');
-            if (n>=3){
-                oBTop.text('警告');
-                oBTop.css('color','red');
-                oBContent.text('您已连续多次输入错误的账号或密码，为保护您的账号安全，系统将强制关闭!');
-                oBOk.click(function () {
-                    window.close();
-                });
             }
         }
     }
-
-});
+    oBMaskEnd.css('display','block');
+    if (n>=3){
+        oBTop.text('警告');
+        oBTop.css('color','red');
+        oBContent.text('您已连续多次输入错误的账号或密码，为保护您的账号安全，系统将强制关闭!');
+        oBOk.click(function () {
+            window.close();
+        });
+    }
+}
 //当弹框的OK按钮被点击
 oBOk.click(function () {
     oBMaskEnd.css('display','none');
 });
+//回车键按下时
+document.onkeydown=function (ev) {
+    if (ev.keyCode==13) {
+        oDian();
+    }
+};

@@ -25,21 +25,44 @@
                             <div id="B-head">
                                 <img src="../images/head.png" alt="">
                             </div>
-                            <span>admin</span>
+                            <span id="B-user-who">admin</span>
                         </div>
                     </div>
                     <!--左侧菜单栏-->
                     <div id="B-tab">
                         <ul>
-                            <li><span class="iconfont icon-kongzhitai"></span><a href="" target="B-boss">控制台</a></li>
-                            <li><span class="iconfont icon-weibiaoti-"></span><a href="" target="B-boss">教师管理</a></li>
-                            <li><span class="iconfont icon-banji"></span><a href="" target="B-boss">班级管理</a></li>
-                            <li><span class="iconfont icon-xuesheng"></span><a href="" target="B-boss">学生管理</a></li>
-                            <li><span class="iconfont icon-kaoqin"></span><a href="" target="B-boss">考勤记录</a></li>
-                            <li><span class="iconfont icon-zhaopian"></span><a href="" target="B-boss">照片墙</a></li>
-                            <li><span class="iconfont icon-quanxian"> </span><a href="" target="B-boss">权限管理</a></li>
-                            <li><span class="iconfont icon-lingdang"></span><a href="" target="B-boss">公告</a></li>
-
+                            <li>
+                                <span class="iconfont icon-kongzhitai"></span>
+                                <a href="" target="B-boss">控制台</a>
+                            </li>
+                            <li class="admin">
+                                <span class="iconfont icon-weibiaoti-"></span>
+                                <a href="" target="B-boss">教师管理</a>
+                            </li>
+                            <li class="teacher">
+                                <span class="iconfont icon-banji"></span>
+                                <a href="" target="B-boss">班级管理</a>
+                            </li>
+                            <li class="teacher">
+                                <span class="iconfont icon-xuesheng">
+                                </span><a href="BStudent.html" target="B-boss">学生管理</a>
+                            </li>
+                            <li class="teacher">
+                                <span class="iconfont icon-kaoqin"></span>
+                                <a href="" target="B-boss">考勤记录</a>
+                            </li>
+                            <li>
+                                <span class="iconfont icon-zhaopian"></span>
+                                <a href="" target="B-boss">照片墙</a>
+                            </li>
+                            <li class="admin">
+                                <span class="iconfont icon-quanxian"></span>
+                                <a href="" target="B-boss">权限管理</a>
+                            </li>
+                            <li>
+                                <span class="iconfont icon-lingdang"></span>
+                                <a href="" target="B-boss">公告</a>
+                            </li>
                         </ul>
                     </div>
                     <!--logo-->
@@ -47,26 +70,7 @@
                         <img src="../images/logo.png" alt="">
                     </div>
                 </div>
-<<<<<<< HEAD
-                <!--左侧菜单栏-->
-                <div id="B-tab">
-                    <ul>
-                        <li><span class="iconfont icon-kongzhitai"></span><a href="" target="B-boss">控制台</a></li>
-                        <li><span class="iconfont icon-weibiaoti-"></span><a href="" target="B-boss">教师管理</a></li>
-                        <li><span class="iconfont icon-weibiaoti-"></span><a href="../html/D-department.html" target="B-boss">教师管理</a></li>
-                        <li><span class="iconfont icon-banji"></span><a href="C-pages/C-class.html" target="B-boss">班级管理</a></li>
-                        <li><span class="iconfont icon-xuesheng"></span><a href="" target="B-boss">学生管理</a></li>
-                        <li><span class="iconfont icon-kaoqin"></span><a href="C-pages/C-check.html" target="B-boss">考勤记录</a></li>
-                        <li><span class="iconfont icon-zhaopian"></span><a href="" target="B-boss">照片墙</a></li>
-                        <li><span class="iconfont icon-quanxian"> </span><a href="" target="B-boss">权限管理</a></li>
-                        <li><span class="iconfont icon-lingdang"></span><a href="" target="B-boss">公告</a></li>
-                        <!--logo-->
-                        <li><img src="../images/logo.png" alt=""></li>
-                    </ul>
-                </div>
-=======
 
->>>>>>> 27dafd214f4f9d21db77d4df40c6fd28dea0c991
             </div>
             <!--右侧窗口-->
             <div id="B-right" >
@@ -78,16 +82,21 @@
                     <!--消息提醒及退出系统-->
                     <div id="B-right-exit">
                         <img src="../images/ld.png" alt="">
-                        <a href=""> 退出登录 <i class=" layui-icon layui-icon-triangle-r"></i> </a>
+                        <a id="B-right-exit-go" href="javascript:;"> 退出登录 <i class=" layui-icon layui-icon-triangle-r"></i> </a>
                     </div>
-<<<<<<< HEAD
-                    <iframe name="B-boss" frameborder="0" scrolling="no"></iframe>
-                    <iframe name="B-boss" frameborder="0"></iframe>
-=======
->>>>>>> 27dafd214f4f9d21db77d4df40c6fd28dea0c991
                 </div>
                 <!--内容显示窗口-->
-                <iframe id="B-boss" name="B-boss" scrolling="no"></iframe>
+                <iframe id="B-boss" name="B-boss" scrolling="no" frameborder="0"></iframe>
+
+            </div>
+            <!--弹框-->
+            <div id="B-mask-end">
+                <div id="B-end" class="clearfix container row col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                    <div id="B-top">确认退出</div>
+                    <div id="B-content">确认退出系统？</div>
+                    <div id="no" class="btn"><a href="javascript:;">取消</a></div>
+                    <div id="ok" class="btn"><a id="B-go-home" href="../../index.html">确定</a></div>
+                </div>
             </div>
         </div>
     </div>
