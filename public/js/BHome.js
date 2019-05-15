@@ -22,6 +22,8 @@ let OBMaskEnd=$('#B-mask-end');
 let OOk=$('#ok');
 //获取蒙版弹框的取消按钮
 let ONo=$('#no');
+//获取li
+let aBLi=document.querySelectorAll('li');
 
 
 
@@ -88,3 +90,13 @@ OOk.click(function () {
 ONo.click(function () {
     OBMaskEnd.css('display','none');
 });
+//当列表选择框被点击时
+for (let i=0;i<aBLi.length;i++){
+    aBLi[i].onclick=function () {
+        for(let j=0;j<aBLi.length;j++){
+            aBLi[j].style.background='';
+        }
+        aBLi[i].style.background='#3d5f59';
+        aBLi[i].querySelector('a').click();
+    };
+}
