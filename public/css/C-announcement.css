@@ -14,7 +14,7 @@
     height: 100px;
     position: absolute;
     top: 20px;
-    right: 300px;
+    right: 150px;
 }
 .btn{
     width: 70px;
@@ -24,16 +24,16 @@
     border: none;
     position: absolute;
     top: 80px;
-    right: 200px;
+    right: 55px;
     border-radius: 5px;
 }
 .annou{
-    width: 30%;
+    width: 32%;
     height: 500px;
     border: 1px solid gainsboro;
     position: absolute;
     top: 150px;
-    right: 250px;
+    right: 140px;
 }
 li{
     border-bottom: 1px solid gainsboro;
