@@ -128,16 +128,12 @@ $(function(){
             var nowdate=datecreat();
             newimg.find("p").text(nowdate)
             newimg.show();
-            console.log(newimg);
+            console.log(newimg.find("img").prop("src"));
             imgbox.append(newimg);
             
-            
-           
-            
         }
+
     }
-
-
 
     // oF.onchange=function(){
     //     alert("已经改变")
