@@ -58,12 +58,12 @@ input{
 /*图标样式*/
 #main{
     float: left;
-    left: 200px;
+    left: 100px;
     top: 60px;
 }
 .main{
     float: left;
-    left: 400px;
+    left: 250px;
     top: 60px;
 }
 
