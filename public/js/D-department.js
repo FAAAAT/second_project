@@ -450,7 +450,7 @@ new Form_4(".D-table").addnew("#test").addcheck({
         {
             func:function (str) {
                 if(str.trim()){
-                    var time = /^\d$/;
+                    var time = /\d{4}-\d{2}-\d{2}/;
                     
                     if(time.test(str)){
                         return true
