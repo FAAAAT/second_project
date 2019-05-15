@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>picture</title>
     <link rel="stylesheet" href="../../css/Bootstrap.css">
     <link rel="stylesheet" href="../../css/L-picture.css">
     <link rel="stylesheet" href="../../css/L-update@.css">
@@ -27,96 +27,222 @@
             <!-- Tab panes -->
             <div class="tab-content el-cont">
                 <!-- 相册 -->
-                <div role="tabpanel" class="tab-pane active" id="home">
+                <div role="tabpanel" class="tab-pane active el-imgbox_1" id="home">
                     <!-- 相册内容 -->
                     <div class="el-buttonbox">
-                        <button class="el-p"><span style="font-size: 16px;">+</span>上传照片/视频</button>
-                        <button class="el-c">创建相册</button>
+                        <!-- <button class="el-p"><span style="font-size: 16px;" >+</span>上传照片/视频</button> -->
+                        <button class="el-c el-c1" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@getbootstrap">创建相册</button>
                     </div>
                     <div class="el-pictures clearfix">
                         <!-- 1 -->
-                        <div class="el-pisingle">
+                        <div class="el-pisingle el-clone">
                             <a href="L-picturedescrip.html">
-                            <div class="el-img">
-                               <img src="../../images/L-imgs/x1.jpg" alt="">
-                                <span class="el-nub">41</span>
-                            </div>
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x1.jpg" alt="">
+                                    <span class="el-nub">41</span>
+                                </div>
                             </a>
                             <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2" >&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
+
+
                         <!-- 2 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x2.jpg" alt="">
-                                <span class="el-nub">25</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x2.jpg" alt="">
+                                    <span class="el-nub">25</span>
+                                </div>
                             </a>
                             <p>歌唱比赛</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- 3 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
-                                <span class="el-nub">13</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x3.jpg" alt="">
+                                    <span class="el-nub">10</span>
+                                </div>
                             </a>
                             <p>活动</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
                         <!-- 4 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x4.jpg" alt="">
-                                <span class="el-nub">125</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x4.jpg" alt="">
+                                    <span class="el-nub">28</span>
+                                </div>
                             </a>
-                            <p>美丽的校园</p>
+                            <p>我们的校园</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <!-- 5 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
-                                <span class="el-nub">06</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x5.jpg" alt="">
+                                    <span class="el-nub">76</span>
+                                </div>
                             </a>
-                            <p>赏花</p>
+                            <p>亲子活动</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
                         <!-- 6 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x2.jpg" alt="">
-                                <span class="el-nub">11</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x6.jpg" alt="">
+                                    <span class="el-nub">120</span>
+                                </div>
                             </a>
-                            <p>毕业典礼</p>
+                            <p>开心的聚餐</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
                         <!-- 7 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
-                                <span class="el-nub">20</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x3.jpg" alt="">
+                                    <span class="el-nub">45</span>
+                                </div>
                             </a>
-                            <p>师生回忆</p>
+                            <p>活动3</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
                         <!-- 8 -->
                         <div class="el-pisingle">
-                            <a href="L-picturedescrip.html"></a>
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x1.jpg" alt="">
-                                <span class="el-nub">20</span>
-                            </div>
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x8.jpg" alt="">
+                                    <span class="el-nub">85</span>
+                                </div>
                             </a>
-                            <p>师生回忆</p>
+                            <p>外出拓展</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-
+                        <!-- 9-->
+                        <div class="el-pisingle">
+                            <a href="L-picturedescrip.html">
+                                <div class="el-img">
+                                    <img src="../../images/L-imgs/x4.jpg" alt="">
+                                    <span class="el-nub">13</span>
+                                </div>
+                            </a>
+                            <p>学校</p>
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -126,116 +252,250 @@
                 <!-- 视频 -->
                 <div role="tabpanel" class="tab-pane" id="profile">
                     <div class="el-buttonbox">
-                        <button class="el-p"><span>11</span>上传视频</button>
+                        <button class="el-p">上传视频</button>
                     </div>
                     <!-- 视频内容 -->
-                    <div class="el-pictures clearfix">
+                    <div class="el-pictures clearfix el-imgbox_2">
                         <!-- 1 -->
-                        <div class="el-pisingle">
+                        <div class="el-pisingle el-clone">
                             <div class="el-img">
                                 <img src="../../images/L-imgs/x1.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
+                                <span class="el-nub iconfont2">&#xe768;</span>
                             </div>
                             <p>美好的春游</p>
-                        </div>
-                        <!-- 2 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x2.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p>歌唱比赛</p>
-                        </div>
-                        <!-- 3 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
-                            </div>
-                            <p>活动</p>
-                        </div>
-                        <!-- 4 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x4.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
-                            </div>
-                            <p>美丽的校园</p>
-                        </div>
-                        <!-- 5 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x3.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
-                            </div>
-                            <p>赏花</p>
-                        </div>
-                        <!-- 6 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x2.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
-                            </div>
-                            <p>毕业典礼</p>
-                        </div>
-                        <!-- 7 -->
-                        <div class="el-pisingle">
-                            <div class="el-img">
-                                <img src="../../images/L-imgs/x4.jpg" alt="">
-                                <span class="iconfont2">&#xe768;</span>
-                            </div>
-                            <p>师生回忆</p>
                         </div>
 
-                        <!-- 8 -->
-                        <div class="el-pisingle">
+                        <!-- 2 -->
+                        <div class="el-pisingle el-clone">
+                            <div class="el-img">
+                                <img src="../../images/L-imgs/x2.jpg" alt="">
+                                <span class="el-nub iconfont2">&#xe768;</span>
+                            </div>
+                            <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3-->
+                        <div class="el-pisingle el-clone">
+                            <div class="el-img">
+                                <img src="../../images/L-imgs/x3.jpg" alt="">
+                                <span class="el-nub iconfont2">&#xe768;</span>
+                            </div>
+                            <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4-->
+                        <div class="el-pisingle el-clone">
+                            <div class="el-img">
+                                <img src="../../images/L-imgs/x4.jpg" alt="">
+                                <span class="el-nub iconfont2">&#xe768;</span>
+                            </div>
+                            <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="el-pisingle el-clone">
+                            <div class="el-img">
+                                <img src="../../images/L-imgs/x5.jpg" alt="">
+                                <span class="el-nub iconfont2">&#xe768;</span>
+                            </div>
+                            <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 6 -->
+                        <div class="el-pisingle el-clone">
+                            <div class="el-img">
+                                <img src="../../images/L-imgs/x6.jpg" alt="">
+                                <span class="el-nub iconfont2">&#xe768;</span>
+                            </div>
+                            <p>美好的春游</p>
+
+                            <!-- 下拉功能 -->
+                            <div class="el-downbox">
+                                <button class="el-downbtn iconfont2">&#xe619;</button>
+                                <div class="el-downlist ">
+                                    <ul>
+                                        <li data-toggle="modal" data-target="#exampleModal"
+                                            data-whatever="@getbootstrap" class="el-wr">编辑
+                                        </li>
+                                        <li data-toggle="modal" data-target=".bs-example-modal-sm">删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 旧的视频 -->
+                        <!-- <div class="el-pisingle">
                             <div class="el-img">
                                 <img src="../../images/L-imgs/x3.jpg" alt="">
                                 <span class="iconfont2">&#xe768;</span>
                             </div>
                             <p>师生回忆</p>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
             </div>
-
         </div>
+    </div>
 
+   
 
+    <!-- ---------编辑相册弹框------ -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">jlkjlkj</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label">相册名称</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">编辑信息</label>
+                            <textarea class="form-control" id="message-text" placeholder="请编辑相册描述"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="el-save" value="">保存</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <!--------- 弹框-------- -->
-    <div id="mask">
-            <a class="close" href="javasript:;">×</a>
-            <div>
-                <span>班级名称：<p>*</p></span><input type="text">
+    <!-- 确定删除相册弹框 -->
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">确定删除相册</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="el-cancel">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
             </div>
-            <div>
-                <span>教室：<p>*</p></span><input type="text">
-            </div>
-            <div>
-                <span>开班日期：</span><input type="text">
-            </div>
-            <div>
-                <span>学生人数：<p>*</p></span><input type="text">
-            </div>
-            <div>
-                <span>班主任：<p>*</p></span><input type="text">
-            </div>
-            <div>
-                <span>状态：</span><input type="text">
-            </div>
-            <div>
-                <span>创建人：</span><input type="text">
-            </div>
-            <div>
-                <span>创建日期：</span><input type="text">
-            </div>
-            <button id="save">保存</button>
-            <button id="cancel">取消</button>
+        </div>
     </div>
+
+    <!-- ---------编辑相册弹框自写------ -->
+    <!-- <div class="GQL-big-box">
+        <div class="GQL-mask">
+            <div class="GQL-Elastic">
+                <div class="GQL-Elastic-box1">
+                    <span class="GQL-span1">相册名称:</span><input type="text" class="GQL-input1"><span
+                        class="GQL-span2">30</span>
+                </div>
+                <div class="GQL-Elastic-box2">
+                    <span class="GQL-span3">相册描述:</span><textarea class="form-control GQL-text"
+                        placeholder="说说这个相册的故事...（非必填）" rows="3"></textarea>
+                    <span class="GQl-span4">200</span>
+                </div>
+                <div class="GQL-Elastic-box3">
+                    <span>主题：</span>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 普通
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 活动
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 比赛
+                    </label>
+                </div>
+               
+                 <div class="GQL-Elastic-box4">
+               <span class="GQL-span5">创建时间:</span>
+                <input type="text" placeholder="2019.05.13">
+            </div> 
+                <div class="GQL-Elastic-box5 pull-right">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 新建单个相册html模板 -->
+    <!-- 弹出视频模板 -->
+    
+
     <script src="../../util/jquery-3.4.0.js"></script>
     <script src="../../js/Bootstrap.js"></script>
     <script src="../../js/L-picture.js"></script>

@@ -18,7 +18,15 @@
   }
 
 
-
+  ul{
+      padding: 0;
+      list-style: none;
+  }
+  button,input{
+   border:none;
+   background: #fff;
+   outline: none;
+  }
 
 /* 头部导航 */
 #el-picturebox{
@@ -51,22 +59,24 @@
   color: #fff;
   border-radius: 4px;
   outline: none;
+  font-size: 14px;
 }
 
  .el-buttonbox .el-p{
     background-color:#e6a715;
     font-size: 14px;
+    
 }
 .el-buttonbox .el-p:hover{
     background-color:#d69909;
 }
 .el-buttonbox .el-c{
-    background-color:#8f8f8f;
+    background-color:#e6a715;
     margin-left: 10px;
 }
 
 .el-buttonbox .el-c:hover{
-    background-color:#747474;
+    background-color:#d69909;
 }
 
 .el-pictures{
@@ -81,6 +91,7 @@
     float: left;
     margin-right:1%;
     margin-top: 20px;
+    position: relative;
 }
 
 
@@ -95,6 +106,11 @@
     margin:-20px 0  0 -30px;
      
 }
+.el-pictures .el-pisingle .el-img a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .el-pictures .el-pisingle span{
     position: absolute;
     right: 5px;
@@ -105,7 +121,7 @@
     
 }
 
-.el-pictures .el-pisingle .el-img:after{
+ .el-pictures .el-pisingle .el-img:after{
    content: "";
    width: 100%;
    height: 100%;
@@ -116,7 +132,7 @@
    top: 0;
    opacity: 0.3;
    z-index: 22;
-}
+}   
 
 
 
@@ -125,10 +141,47 @@
 }
 
 
+/* 下拉功能 */
+.el-downbox .el-downlist{
+    position: absolute;
+    right: 16px;
+    top: 48px;
+    z-index: 300;
+   
+}
+
+.el-downbox .el-downlist {
+   display: none;
+}
+.el-downbox .el-downlist li{
+    background-color: #fff;
+    padding: 8px 30px;
+    color: #575757;
+}
+.el-downbox .el-downlist li:hover{
+    background-color: #f8f7f7;
+}
+
+
+.el-downbox button{
+    width: 30px;
+   height: 30px;
+   border: 1px solid #d4d4d4;
+   position: absolute;
+   right: 16px;
+   top: 16px;
+   z-index: 300;
+   display: none;
+}
+
+
+
+
 /* 分页 */
 #el-navpage{
   position: absolute;
   left: 0;
+  z-index: 9999;
 }
 
 
@@ -136,52 +189,93 @@
 
 
 
-/* ------------弹框---------------- */
 
-#mask{
-    width:350px;
-    height: 500px;
-    border: 1px solid gray;
+/* ---------编辑弹框 --------*/
+.GQL-Elastic{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #333333;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
     background: white;
-    border-radius: 10px;
+    font-size: 14px;
+    padding: 20px;
+}
+.GQL-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.GQL-big-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    z-index: 99999;
+   
+}
+.GQL-Elastic-box1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -175px;
-    padding-top: 30px;
-    display: none;
+    top: 30px;
+    left: 38px;
 }
-#mask div{
-    margin-bottom: 20px;
+.GQL-span1{
+    margin-right: 9px;
 }
-#mask div span{
-    display: inline-block;
-    width: 100px;
-    height: 30px;
-    text-align: right;
-    padding-left: 40px;
+.GQL-Elastic-box1 input{
+    width: 228px;
 }
-#mask p{
-    display: inline-block;
-    color: red;
+.GQL-span2{
+    margin-left: 9px;
 }
-#save,#cancel{
-    width: 60px;
-    height: 30px;
-    border: none;
-    color: white;
-}
-#save{
-    background: lightseagreen;
-    margin-left:110px ;
-    margin-right: 20px;
-}
-#cancel{
-    background: #bea47a;
-}
-.close{
+.GQL-Elastic-box2{
     position: absolute;
-    top:3px ;
-    right: 4px;
+    top: 83px;
+    left: 106px;
 }
+.GQL-span3{
+   position: absolute;
+    top: 2px;
+    left: -67px;
+}
+.GQL-text{
+    width: 229px;
+}
+.GQl-span4{
+    position: absolute;
+    top: 4px;
+    left: 238px;
+}
+.GQL-Elastic-box3{
+    position: absolute;
+    top: 179px;
+    left: 62px;
+}
+.GQL-Elastic-box4{
+    position: absolute;
+    top: 228px;
+    left: 42px;
+}
+.GQL-Elastic-box5{
+    margin-top: 271px;
+    margin-right: 9px;
+    
+}
+
+.GQL-input1{
+    border:1px solid #ccc;
+    height: 30px;
+}
+
+.GQL-Elastic-box5 {
+    margin-top: 220px;
+    margin-right: 9px;
+}
+
