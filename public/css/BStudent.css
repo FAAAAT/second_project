@@ -1,0 +1,135 @@
+/*最大的框*/
+#B-box{
+    padding: 2em 1em;
+    position: relative;
+    text-align: center;
+}
+#B-seo{
+    position: relative;
+}
+#B-seo>div{
+    float: left;
+}
+/*输入框和描述文字浮动*/
+#B-seo>div>input,#B-seo>div>p{
+    float: left;
+}
+/*设置输入框长宽*/
+#B-seo>div>input{
+    width: 150px;
+    height: 30px;
+}
+/*设置描述文字样式*/
+#B-seo>div>p{
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+/*输入框获取焦点的颜色*/
+.form-control:focus {
+    border-color: #80b3ad;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #77b4ad;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #77b4ad;
+}
+#B-class{
+    padding-left: 2em;
+}
+#B-button>button{
+    width: 70px;
+    margin-left: 1em;
+}
+.btn1{
+    line-height: 15px;
+    border-radius: 5px;
+    height: 30px;
+    background:#009688;
+    color: white;
+    border: none;
+
+}
+/*表格表头*/
+#B-head{
+    background: #009688;
+    color: white;
+    text-align: center;
+}
+.sm1{
+    color: #009688;
+    text-decoration: none;
+}
+.sm1:hover{
+    cursor: pointer;
+}
+#B-head>th,td{
+    text-align: center;
+}
+/*分页*/
+a:hover{
+    text-decoration: none;
+}
+/*提醒弹框*/
+.B-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*弹框背景*/
+.B-remind-mask{
+    background: white;
+    padding: 1em 1em;
+    box-shadow: #35514c 4px 4px 12px 1px;
+    margin-top: 12em;
+    border-radius: 8px;
+}
+/*弹框名字*/
+.B-remind-head{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #3c763d;
+    margin-bottom: 10px;
+}
+/*弹框描述*/
+#B-news-content{
+    height: 100px;
+    line-height: 25px;
+}
+/*弹框按钮*/
+.B-remind-button{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.B-remind-button>button{
+    width: 100px;
+}
+#B-news-button-yes,#B-edit-button-yes{
+    margin-left: 3em;
+}
+#B-edit-body{
+    text-align: center;
+    border: red 1px solid;
+ }
+#B-edit-body>ul{
+    float: left;
+    text-align: center;
+    border: red 1px solid;
+}
+#B-edit-left{
+    margin-right: 3em;
+}
+#B-edit-body>ul>li{
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#B-edit-body>ul>li>input{
+    width: 150px;
+    height: 25px;
+    display: inline;
+}

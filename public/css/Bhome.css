@@ -55,7 +55,7 @@
 }
 /*选项栏图标*/
 #B-tab>ul>li>span{
-    padding-left: 1em;
+    padding-left: 22px;
     color: white;
     font-size: 16px;
 }
@@ -63,8 +63,8 @@
 #B-tab>ul>li>a{
     color: white;
     font-size: 16px;
-    padding-left: 1em;
     text-decoration: none;
+    padding-left: 1em;
 }
 /*选项栏logo*/
 #B-end-logo{
@@ -165,5 +165,9 @@ iframe{
 }
 #ok{
     margin-left: 40px;
+}
+li:hover{
+    background: #557c76;
+    cursor: pointer;
 }
 
