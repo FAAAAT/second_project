@@ -11,10 +11,10 @@
 <body>
     <div class="layui-container">
         <div class="query layui-row">
-                <span class="s1">班级名称：</span>
+                <!-- <span class="s1">班级名称：</span>
                 <input type="text" class="t1">
-                <span>班主任：</span>
-                <input type="text" class="t2">
+                <span>姓名：</span>
+                <input type="text" class="t2"> -->
                 <input type="text" placeholder="请输入想要查询的内容" class="t3">
                 <button  class="layui-btn btn1" id="aaa">查询</button>
                 <button class="layui-btn btn2">
@@ -31,10 +31,10 @@
                 <tr>
                     <th class="design">班级名称</th>
                     <th>教室</th>
-                    <th>开班日期</th>
-                    <th>学生人数</th>
-                    <th>班主任</th>
-                    <th>创建人</th>
+                    <th>入学时期</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>就读状态</th>
                     <th>创建日期</th>
                     <th>操作</th>
                 </tr>
@@ -47,7 +47,7 @@
                     <td class="aaa">30</td>
                     <td>吴彦祖</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -64,7 +64,7 @@
                     <td>30</td>
                     <td>金城武</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -81,7 +81,7 @@
                     <td>30</td>
                     <td>古天乐</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -98,7 +98,7 @@
                     <td class="aaa">30</td>
                     <td>吴彦祖</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -115,7 +115,7 @@
                     <td>30</td>
                     <td>金城武</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -132,7 +132,7 @@
                     <td>30</td>
                     <td>古天乐</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -149,7 +149,7 @@
                     <td class="aaa">30</td>
                     <td>吴彦祖</td>
                     <td>
-                        admin
+                        在读
                     </td>
                     <td>
                         2019-10-10
@@ -179,18 +179,18 @@
             ,count: 50 //数据总数，从服务端得到
         });
     });
-    new Form_4("#tab").addnew(".btn2").addcheck({
+    new Form_4("#tab").search(".t3","#aaa",).addnew(".btn2").addcheck({
         "班级名称":{
-            func:function (str) {
-                if(str.trim()){
-                    return true
+            func:function (str) {    
+                if(type()){
+                    return true;
                 }
                 else {
                     return false
                 }
             },
             ok:"ok",
-            false:"不能为空"
+            false:"请输入班级类型"
         },
         "教室":{
             func:function (str) {
@@ -202,9 +202,22 @@
                 }
             },
             ok:"ok",
-            false:"不能为空"
+            false:"请输入教室"
         },
-        "开班日期":{
+        "入学时间":{
+            func:function (str) {
+                if(str.trim()){
+                    return true
+                   
+                }
+                else {
+                    return false
+                }
+            },
+            ok:"ok",
+            false:"请输入入学四时间"
+        },
+        "学号":{
             func:function (str) {
                 if(str.trim()){
                     return true
@@ -214,9 +227,9 @@
                 }
             },
             ok:"ok",
-            false:"不能为空"
+            false:"请输入学号"
         },
-        "学生人数":{
+        "姓名":{
             func:function (str) {
                 if(str.trim()){
                     return true
@@ -226,9 +239,9 @@
                 }
             },
             ok:"ok",
-            false:"不能为空"
+            false:"请输入姓名"
         },
-        "班主任":{
+        "就读状态":{
             func:function (str) {
                 if(str.trim()){
                     return true
@@ -238,19 +251,7 @@
                 }
             },
             ok:"ok",
-            false:"不能为空"
-        },
-        "创建人":{
-            func:function (str) {
-                if(str.trim()){
-                    return true
-                }
-                else {
-                    return false
-                }
-            },
-            ok:"ok",
-            false:"不能为空"
+            false:"请输入就读状态"
         },
         "创建日期":{
             func:function (str) {
