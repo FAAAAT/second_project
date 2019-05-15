@@ -8,6 +8,7 @@
     <script src="../util/layui/layui.js"></script>
     <script src="../util/jquery-3.4.0.js"></script>
     <link rel="stylesheet" href="../css/D-department.css">
+    <script src="../js/D-department.js"></script>
 </head>
 <body>
     <div class="D-box">
@@ -77,28 +78,28 @@
                 </div>-->
                 <div class="D-right-conter">
                     <!--<iframe src="" id="D-iframe">-->
-                    <!---->
+                        <!---->
                     <!--</iframe>-->
                     <div class="D-iframe">
                         <div class="layui-row D-search">
                             <div class="layui-col-md4 layui-col-md-offset1">
                                 <!--查询部门人-->
-                                <input class="input" type="text" placeholder="输入需要查询的内容"> <button class=" D-btn layui-btn layui-btn layui-btn-xs check">查询</button>
+                                <input class="" type="text" placeholder="输入需要查询的内容"> <button class=" D-btn layui-btn layui-btn layui-btn-xs">查询</button>
                             </div>
                             <div class="layui-col-md2 layui-col-md-offset4">
                                 <!--新增部门人资料按钮-->
-                                <button id="test" class="D-btn layui-btn layui-btn-xs D-iframe-btn layui-icon layui-icon-add-1">新增</button>
+                                <i class="D-iframe-btn layui-icon layui-icon-add-1"></i> <button class="D-btn layui-btn layui-btn-xs D-iframe-btn">新增</button>
                             </div>
                         </div>
-                        <!---新增部门人资料界面--->
-                        <div class=" ">
-                            <!--<form class="layui-form D-form" action="">
+                        <!--新增部门人资料界面-->
+                        <div class="D-elastic">
+                            <form class="layui-form D-form" action="">
                                 <div>
                                     <button class="layui-btn layui-btn-xs D-close" lay-submit lay-filter="formDemo" title="关闭窗口">X</button>
                                 </div>
-                                &lt;!&ndash;输入框&ndash;&gt;
+                                <!--输入框-->
                                 <div id="D-elastic-input">
-                                    <laber><span class="D-span-input">姓名：</span>&#12288 &#12288<input class="D-inp" type="text" placeholder="输入姓名"></laber><br>
+                                    <laber>姓名：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入姓名"></laber><br>
                                     <laber>性别：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入性别"></laber><br>
                                     <laber>年龄：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入年龄"></laber><br>
                                     <laber>部门：&#12288 &#12288<input class="D-inp" type="text" placeholder="输入部门"></laber><br>
@@ -108,16 +109,16 @@
                                     <laber>电子邮箱：<input class="D-inp" type="text" placeholder="电子邮箱"></laber><br>
 
                                 </div>
-                                &lt;!&ndash;重置 确定 取消 按钮&ndash;&gt;
+                                <!--重置 确定 取消 按钮-->
                                 <div class="layui-form-item D-form-btn">
                                     <div class="layui-input-block">
-                                        <button type="reset" class="layui-btn layui-btn-primary layui-btn-xs D-form-Reset">重置</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary layui-btn-xs">重置</button>
 
                                         <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formDemo">取消</button>
                                         <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formDemo">确定</button>
                                     </div>
                                 </div>
-                            </form>-->
+                            </form>
                         </div>
                         <!--部门人详情表格-->
                         <table class="D-table layui-table">
@@ -134,26 +135,28 @@
                                 <th>性别</th>
                                 <th>年龄</th>
                                 <th>职位</th>
+                                <th>工龄</th>
                                 <th>联系电话</th>
                                 <th>创建时间</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <!--<tr class="D-tr">
-                                <td class="D-number"></td>
+                            <tr>
+                                <td>1</td>
                                 <td>宣传</td>
-                                <td class="D-tName">张撒好</td>
+                                <td>张撒好</td>
                                 <td>女</td>
                                 <td>24</td>
                                 <td>员工</td>
+                                <td>2</td>
                                 <td><a class="D-tel" href="">17711066729</a></td>
                                 <td>2018-10-9</td>
                                 <td class="D-modify"><i class="layui-icon layui-icon-edit D-i1"></i> &#12288<i class="layui-icon layui-icon-delete D-i2"></i></td>
-                            </tr>-->
+                            </tr>
                             </tbody>
                         </table>
-                        <div id="test1" class="D-test1"></div>
+                        <!--<div id="test1" class="D-test1"></div>-->
                     </div>
                 </div>
             </div>
@@ -161,7 +164,6 @@
         </div>
     </div>
 </body>
-<script src="../js/D-department.js"></script>
 <script>
 </script>
 </html>
