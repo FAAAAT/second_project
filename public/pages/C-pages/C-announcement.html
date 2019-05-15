@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hay-on-way</title>
+    <link rel="stylesheet" href="../../util/layui/css/layui.css">
+    <link rel="stylesheet" href="../../util/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/C-announcement.css">
+    <script src="../../util/jquery-3.4.0.js"></script>
+</head>
+<body>
+    <div class="layui-container">
+        <p style="font-size: 16px">一个月访问人数</p>
+        <div id="main" style="width: 600px;height:500px;"></div>
+
+        <div class="left">
+            <textarea class="ipt"></textarea>
+            <button class="btn">发送公告</button>
+        </div>
+
+        <div class="annou">
+            <ul class="aaa">
+                <li>
+                    <h3>雷霆幼儿园获得市级示范性幼儿园</h3>
+                    <p title="雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。">雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。</p>
+                </li>
+                <li>
+                    <h3>雷霆幼儿园好声音圆满成功</h3>
+                    <p title="雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。">雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。</p>
+                </li>
+                <li>
+                    <h3>雷霆幼儿园获得市级示范性幼儿园</h3>
+                    <p title="雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。">雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。</p>
+                </li>
+                <li>
+                    <h3>雷霆幼儿园获得市级示范性幼儿园</h3>
+                    <p title="雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。">雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。</p>
+                </li>
+                <li>
+                    <h3>雷霆幼儿园获得市级示范性幼儿园</h3>
+                    <p title="雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。">雷霆幼儿园因为教学质量好，教师素质高，教学环境优美而获得市级示范性幼儿园。</p>
+                </li>
+            </ul>
+        </div></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        xAxis: {
+            type: 'category',
+            data: ['2018-11-13', '2018-12-15', '2019-1-9', '2019-2-15', '2019-3-16', '2019-4-13', '2019-5-16']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            type: 'line'
+        }]
+    };
+    myChart.setOption(option);
+</script>
+<script src="../../js/C-announcement.js"></script>
+
+</html>
