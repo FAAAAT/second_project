@@ -87,7 +87,6 @@ var table = [{
 }];
 
 var D_table = $('.D-table');
-
 table.forEach(function (v,i) {
     var D_oTr = document.createElement('tr');
     //abf.innerHTML = '';
