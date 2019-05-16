@@ -79,7 +79,6 @@ var table = [{
 }];
 
 var D_table = $('.D-table');
-
 table.forEach(function (v,i) {
     var D_oTr = document.createElement('tr');
     //abf.innerHTML = '';
@@ -442,7 +441,7 @@ new Form_4(".D-table").addnew("#test").addcheck({
         {
             func:function (str) {
                 if(str.trim()){
-                    var time = /\d{4}-\d{2}-\d{2}/;
+                    var time = /^\d$/;
                     
                     if(time.test(str)){
                         return true

@@ -130,9 +130,53 @@ $(function () {
 
   //------------------------------------视频
 
-  pictures(".el-imgbox_2")
-
   
+  
+  pictures(".el-imgbox_2")
+   
+  //点击x视频停止播放
+  $("#el-x").on("click",function(){
+    // alert(15412);
+    var video = document.getElementById("el_video_1");
+    video.pause();
+    $("#el-videobox").hide();
+   
+  })
+  
+  //点击视频播放或者停止播放
+  var ispaly=true;
+  //封装播放
+  function videopaly(){
+    var video = document.getElementById("el_video_1");
+    if(ispaly){
+        video.pause(); 
+        $("#el-picon").show();
+        ispaly=false;
+        
+    }else{
+        video.play();
+        $("#el-picon").hide();
+        ispaly=true;
+    }
+  }
+
+
+  //点击视频播放或者停止播放
+   $("#el_video_1").on("click",function(){
+       videopaly();
+   })
+  
+   $("#el-picon").on("click",function(){
+       videopaly();
+   })
+
+  //点击照片播放视频
+  $(".el-showvide").on("click",function(){
+      $("#el-videobox").show();
+      var video = document.getElementById("el_video_1");
+      video.play();
+  })
+
 
 })
 

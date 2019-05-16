@@ -119,6 +119,14 @@ h2{
 }
 #ok{
     width: 150px;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    bottom:10px ;
+    left: 75px;
+}
+#ok:hover{
+    cursor: pointer;
 }
 #ok>a{
     color: white;

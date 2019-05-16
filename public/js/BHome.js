@@ -58,10 +58,10 @@ function BDivWidth() {
     let oLookH = $(window).height();
     let oBExitH=oBRightLogo.outerHeight();
     if (oLookH<630) {
-        oBleft.css('height','630');
-        oBRight.css('height','630');
+        oBleft.css('height','660');
+        oBRight.css('height','660');
         oBBoss.css('height',oBRight.outerHeight()-oBExitH-40);
-        OBMaskEnd.css('height','630')
+        OBMaskEnd.css('height','660')
 
     }else {
         oBleft.css('height',oLookH);
