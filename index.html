@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <title>雷霆幼儿园管理系统登录</title>
@@ -11,64 +12,70 @@
     <script src="public/js/Bootstrap.js"></script>
     <link rel="stylesheet" href="public/css/BSign.css">
 </head>
+
 <body>
-    <div id="B-mask">
-        <div id="B-box" class="container row col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
-            <!--logo-->
-            <div id="B-imgs">
-                <img src="public/images/logo.png" alt="">
-            </div>
-            <h2><small>CLASS ADMIN</small></h2>
-            <br>
-            <!--输入框-->
-            <div class="form-group">
-                <!--用户名-->
-                <div class="input-group">
-                    <div class="input-group-addon">
-                        <span class="iconfont icon-yonghu"></span>
+    <div id="B-mask" class="container-fluid">
+        <div class="row ">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                <div id=B-box class="center-block">
+                    <!--logo-->
+                    <div id="B-imgs">
+                        <img src="public/images/logo.png" alt="">
                     </div>
-                    <input id="B-user" type="text" class="form-control"  placeholder="用户名">
+                    <h2><small>CLASS ADMIN</small></h2>
+                    <br>
+                    <!--输入框-->
+                    <div class="form-group">
+                        <!--用户名-->
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="iconfont icon-yonghu"></span>
+                            </div>
+                            <input id="B-user" type="text" class="form-control" placeholder="用户名">
 
-                    <!--正确或错误图标-->
-                    <div class="remind red" id="no">
-                        <span class="layui-icon">&#x1007;</span>
-                    </div>
-                    <div class="remind greed" id="yes">
-                        <span class="layui-icon">&#x1005;</span>
+                            <!--正确或错误图标-->
+                            <div class="remind red" id="no">
+                                <span class="layui-icon">&#x1007;</span>
+                            </div>
+                            <div class="remind greed" id="yes">
+                                <span class="layui-icon">&#x1005;</span>
+                            </div>
+                        </div>
+                        <p id="B-user-content" class="red content"></p>
+                        <br>
+                        <!--密码-->
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="iconfont icon-method-draw-image"></span>
+                            </div>
+                            <input id="B-pass" type="password" class="form-control" placeholder="密码">
+                            <!--正确或错误图标-->
+                            <div class="remind red" id="no1">
+                                <span class="layui-icon">&#x1007;</span>
+                            </div>
+                            <div class="remind greed" id="yes1">
+                                <span class="layui-icon">&#x1005;</span>
+                            </div>
+                        </div>
+                        <p id="B-pass-content" class="red content"></p>
+                        <br>
+                        <!--登录按钮-->
+                        <button id="B-go" class="btn1">立即登录</button>
                     </div>
                 </div>
-                <p id="B-user-content" class="red content"></p>
-                <br>
-                <!--密码-->
-                <div class="input-group">
-                    <div class="input-group-addon">
-                        <span class="iconfont icon-method-draw-image"></span>
-                    </div>
-                    <input id="B-pass" type="password" class="form-control"  placeholder="密码">
-                    <!--正确或错误图标-->
-                    <div class="remind red" id="no1">
-                        <span class="layui-icon">&#x1007;</span>
-                    </div>
-                    <div class="remind greed" id="yes1">
-                        <span class="layui-icon">&#x1005;</span>
-                    </div>
-                </div>
-                <p id="B-pass-content" class="red content"></p>
-                <br>
-                <!--登录按钮-->
-                <button id="B-go" class="btn1">立即登录</button>
             </div>
-        </div>
-        <!--弹框-->
-        <div id="B-mask-end">
-            <div id="B-end" class="container row col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
-                <div id="B-top">登录提示</div>
-                <div id="B-content">用户名或密码错误，请核对后重新输入。<br> 忘记密码请联系系统管理员。</div>
-                <div id="ok" class="btn1"><a href="javascript:;">确定</a></div>
-            </div>
-        </div>
 
+        </div>
     </div>
+    <!--弹框-->
+    <div id="B-mask-end">
+        <div id="B-end" class="center-block">
+            <div id="B-top">登录提示</div>
+            <div id="B-content">用户名或密码错误，请核对后重新输入。<br> 忘记密码请联系系统管理员。</div>
+            <div id="ok" class="btn1"><a href="javascript:;">确定</a></div>
+        </div>
+    </div>
+
 </body>
 
 <script src="public/js/BSign.js"></script>
