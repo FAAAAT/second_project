@@ -76,14 +76,6 @@ var table = [{
     position:'门卫',
     tel:'17711062222',
     time:'2018-05-08',
-},{
-    department:'宣传',
-    name:'鲜华',
-    sex:'女',
-    age:26,
-    position:'主任',
-    tel:'17711012345',
-    time:'2018-05-08',
 }];
 
 var D_table = $('.D-table');

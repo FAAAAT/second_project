@@ -37,6 +37,7 @@
     height: 500px;
 }
 .D-iframe{
+    margin-top: 10px;
     color: #0C0C0C;
     text-align: center
 }
@@ -57,13 +58,14 @@ h4{
 }
 .D-search{
     line-height: 40px;
+    font-size: 18px
 }
 .D-table{
     color: black;
     text-align: center;
 }
 #D-tr{
-    background: #009688;
+    background: lightseagreen;
     color: white;
 }
 #D-tr th{
@@ -157,10 +159,11 @@ h4{
 /*    line-height: 30px;*/
 /*}*/
 .D-btn{
-    background: #009688;
+    background: lightseagreen;
     color: #fff;
     border-radius: 10%;
-    width: 50px;
+    /* width: 50px; */
+    font-size: 16px;
 }
 .D-modify i{
     font-size: 28px;
